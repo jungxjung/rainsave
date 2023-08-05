@@ -124,6 +124,7 @@ vm.mount('html')
 
 
 
+
 //導覽列分頁籤滾動後加白邊框或陰影
 $(window).scroll(function(){
   if ($(window).scrollTop() > 0){
@@ -296,7 +297,3 @@ document.getElementById('clearId').onclick = () => {
   document.getElementById('table_totalpriceId_4').textContent = "" ;
   document.getElementById('table_totalpriceId_4_1').textContent = "" ;
 }
-
-$('iframe.yt-hd-thumbnail').youTubeHDThumbnail({
-	darkenThumbnail: false
-});

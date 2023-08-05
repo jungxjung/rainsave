@@ -132,7 +132,7 @@
             </div>
           </div>
           <div class="col-md-6 p-4">
-            <iframe width="100%" height="331" src="https://www.youtube.com/embed/KDPVOEMfAXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe class="yt-hd-thumbnail" width="100%" height="331" src="https://www.youtube.com/embed/KDPVOEMfAXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
         </div>
         <div class="row mt-3">
@@ -143,7 +143,7 @@
             </div>
           </div>
           <div class="col-md-6 p-4">
-            <iframe width="100%" height="331" src="https://www.youtube.com/embed/a_2UmSCWw_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe class="yt-hd-thumbnail" width="100%" height="331" src="https://www.youtube.com/embed/a_2UmSCWw_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
         </div>
         <div class="row">
@@ -158,7 +158,7 @@
             </div>
           </div>
           <div class="col-md-6 p-4">
-            <iframe width="100%" height="331" src="https://www.youtube.com/embed/O-7B43gLh-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe class="yt-hd-thumbnail" width="100%" height="331" src="https://www.youtube.com/embed/O-7B43gLh-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
     <div class="row">
       <h1 class="title mb-4">Rain SAVE 安裝教學</h1>
       <div class="col-sm-12 mt-5 d-flex justify-content-center assbl_film">
-        <iframe width="80%" height="585" src="https://www.youtube.com/embed/97jlR6QYJp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <iframe class="yt-hd-thumbnail" width="80%" height="585" src="https://www.youtube.com/embed/97jlR6QYJp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
       </div>
     </div>
   </div>
@@ -245,6 +245,12 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js'></script>
 <!-- yt大圖連結jquery plugin -->
 <script src="../style/YouTubeHDThumbnail/js/jQuery.YouTube.HD.Thumbnail.js"></script>
+<script>
+  $('iframe.yt-hd-thumbnail').youTubeHDThumbnail({
+	darkenThumbnail: true
+});
+</script>
+
 <!-- 自己的js -->
 <script  src="/script.js"></script>
 
