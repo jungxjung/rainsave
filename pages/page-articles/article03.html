@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rain SAVE 儲集框架_知識分享_為何使用 Rain SAVE 儲集框架?(進水速度與地震帶上的適應性探討)</title>
+  <link rel="icon" href="/images/rainsave_bookmark.png">
+  <meta name="description" content="Rain SAVE 儲集框架 為一種塑膠射出成型製品其廣泛運用於地下儲集雨水及滲透保水等基地保水之工程使用，我司所生產之儲集框架產品具有精度高、易於安裝、抗壓強度高、質量輕盈等特性。產品採100%均質一級回收塑料並添加各式耐衝擊、抗紫外線、抗凍融等助劑製成。">
+  <meta name="author" content="Rain Master">
+  <meta property="og:url"   content="https://rainsave.com.tw/pages/page-articles/article03.html" />
+  <meta property="og:type"  content="website" />
+  <meta property="og:title" content="Rain SAVE 儲集框架_知識分享_為何使用 Rain SAVE 儲集框架?(進水速度與地震帶上的適應性探討)" />
+  <meta property="og:image" content="https://rainsave.com.tw/images/homepage/articleimg_03.jpg" />
+  <meta property="og:description" content="Rain SAVE 儲集框架 為一種塑膠射出成型製品其廣泛運用於地下儲集雨水及滲透保水等基地保水之工程使用，我司所生產之儲集框架產品具有精度高、易於安裝、抗壓強度高、質量輕盈等特性。產品採100%均質一級回收塑料並添加各式耐衝擊、抗紫外線、抗凍融等助劑製成。" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-md fixed-top top_1">
+  <div class="container-fluid"><a class="navbar-brand" href="/index.html"> <img class="d-inline-block align-text-top" src="/images/rainsave_brandicon.png" alt="Rain SAVE 儲集框架" width="60"/>
+      <div class="brand d-inline-block align-text-top"> 
+        <h3 class="rainsave">Rain SAVE 儲集框架</h3><img class="company_name" src="/images/company_name+logo.png" alt="正在旺企業有限公司" width="180"/>
+      </div></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-telegram"> </i></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="company_info ms-auto">
+        <div class="line"></div>
+        <div class="addr">地址：{{ address }}</div>
+        <div class="tel_fax">電話：{{ tel_number }} / 傳真：{{ fax_number }}</div>
+        <div class="email">E-mail：{{ email }}</div>
+      </div>
+    </div>
+  </div>
+</nav>
+<header id="rainsave_page00_knowledge">
+  <div class="container">
+    <nav class="navbar navbar-expand-md fixed-top top_2">
+      <button class="navbar-toggler ms-auto nav_hide" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
+        <ul class="nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page01.html">產品特點與安裝</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">產品大樣</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/pages/page02-1.html">儲集框架主體</a></li>
+              <li><a class="dropdown-item" href="/pages/page02-2.html">儲集框架側板</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page03.html">資源下載</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page04.html">滲透VS儲水</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page05.html">需求計算</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page06.html">使用須知</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page07.html">荷重及壓力</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page08.html">實績案例</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="title">Rain SAVE 知識分享</h1>
+    <div class="row wholecontent d-flex flex-row-reverse">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="title_home down">為何使用 Rain SAVE 儲集框架? (進水速度與地震帶上的適應性探討)</h1>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="text">接續上一篇章的說明，本篇將探討關於	雨水流入速度(進水速度)和產品於亞洲地震帶上的適應性。</p>
+              </div>
+              <div class="col-sm-12">
+                <img src="" alt=""/>
+                <img src="" alt=""/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="title_m_3">主要探討項目</h4>
+                <p class="text">儲集框架為世界上長年使用的安全可靠產品其廣泛應用於全球各項地下儲水工程，主要討論項目為：1.抗壓強度 2.雨水流入速度(進水速度) 3.產品於亞洲地震帶上的適應性</p>
+                <ol class="text" start="2">
+                  <li class="fw-bold"> <span>雨水流入速度(進水速度)       </span>
+                    <p class="fw-normal">長短板型式及框架型式內的結構空間較大，比較不會有進水速度需考量的問題。而巧克力磚的內部結構空間則較為擠迫，真正在下大雨的時候水並不容易流入，流入後也不容易往下流，此為結構設計在進水效能考量上的缺陷。</p>
+                  </li>
+                  <li class="fw-bold"> <span>產品於亞洲地震帶上的適應性     </span>
+                    <p class="fw-normal">長短板型式的產品為一組一組的安裝，各組塊之間並無連結，故若回填時夯實度不足、上方覆土壓力不夠時於地震發生之時對抗地底錯動與地下剪力較弱。<br>框架型式產品又分兩種型式，一種需要搭配相應插銷的剪力配件將框架與框架連接，另一種為一體成形式，不需要再另外搭配剪力插銷。原則上若有正確、確實的安裝，有配件與無配件的產品在對抗地底錯動與地下剪力都是很好的產品。<br>巧克力磚型式的產品，因其結構複雜並且連續，故其對抗剪力之能力也不錯，但因其沒有側向結構故回填時土讓會往儲集框架內側擠壓，相較之下使用效果比較沒有上述兩種型式來得好。</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="title_m_3">結論</h4>
+                <p class="text">若考量雨水流速(進水速度)，長短板型式及框架型式因內部結構空間較大，是較理想的選擇；而若是考慮到產品於亞洲地震帶上的適應性，框架型式相較其他兩種形式來說，整體的結構複雜程度、產品設計的完整性都較為完善，比較能適應地震時產生之各種力量。</p>
+              </div>
+            </div>
+            <div class="row space_blank"></div>
+            <div class="row space_blank"></div>
+            <div class="row">
+              <div class="col-sm-12 d-flex justify-content-end"><a class="pagetab previous" href="/pages/page-articles/article02.html">上一篇文章</a><a class="pagetab next" href="">下一篇文章</a></div>
+            </div>
+            <div class="row space_blank"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h5 class="left_title">了解更多</h5>
+        <ul class="morecases">
+          <template v-for="(item, index) in knowledge">
+            <li v-if="index === 2" class="casestudy active no_br"> 
+              <a class="active" v-bind:href="item.case_href"><img class="navbar_casepic" v-bind:src="item.picture_src" alt=""/>{{ item.title }}
+                <p class="navbar_sum active">{{ item.intro }}</p>
+              </a>
+            </li>
+            <li v-else class="casestudy"> 
+              <a v-bind:href="item.case_href"><img class="navbar_casepic" v-bind:src="item.picture_src" alt=""/>{{ item.title }}
+                <p class="navbar_sum">{{ item.intro }}</p>
+              </a>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<footer id="company_info1">
+  <div class="container">
+    <div class="row company_footinfo">
+      <div class="col-sm-4 mt-2"> 
+        <h6 class="company_intro_bold">正在旺企業有限公司</h6>
+        <p class="company_intro_small">地址：{{ address }}</p>
+      </div>
+      <div class="col-sm-4 mt-2"> 
+        <h6 class="company_intro_bold">聯絡我們</h6>
+        <p class="company_intro_small">電話：{{ tel_number }}</p>
+        <p class="company_intro_small">傳真：{{ fax_number }}</p>
+        <p class="company_intro_small">E-mail：{{ email }}</p>
+      </div>
+      <div class="col-sm-4 mt-2">
+        <div class="col-sm-12 d-flex align-items-start">
+          <h6 class="company_intro_bold">我們的社群</h6><a class="company_intro_small" href="https://www.facebook.com/rainmaster.tw" target="_blank"> <i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="col-sm-12 d-flex align-items-start">
+          <h6 class="company_intro_bold">我們的頻道</h6><a class="company_intro_small" href="https://www.youtube.com/channel/UCfrM6xyJ74HVgmu4kqDTdWQ/featured" target="_blank"> <i class="bi bi-youtube"></i></a>
+        </div>
+        <div class="col-sm-12 d-flex align-items-center flex-wrap">
+          <div class="lab_logo"> 
+            <img src="/images/footer_labicon/UL.png" alt="" class="lablogo">
+          </div>
+          <div class="lab_logo"> 
+            <img src="/images/footer_labicon/TAF.png" alt="" class="lablogo">
+          </div>
+          <div class="lab_logo"> 
+            <img src="/images/footer_labicon/ZT.jpg" alt="" class="lablogo">
+          </div>
+          <div class="lab_logo"> 
+            <img src="/images/footer_labicon/TTT.png" alt="" class="lablogo">
+          </div>
+          <div class="lab_logo"> 
+            <img src="/images/footer_labicon/SGS.jpg" alt="" class="lablogo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer id="company_deco">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 companydeco">
+        <img src="/images/company_name+logo.png" alt="正在旺企業有限公司"/>
+        <h6 class="copyright">© 2022 正在旺企業-{{ message }}. All Rights Reserved.</h6>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer id="company_info">
+  <div class="container">
+    <div class="row infoboxes">
+      <div class="col-sm-12">
+        <a class="info2" href="/pages/page01.html">產品特點與安裝</a>
+        <a class="info2" href="/pages/page02-1.html">產品大樣</a>
+        <a class="info2" href="/pages/page03.html">資源下載</a>
+        <a class="info2" href="/pages/page05.html">需求計算</a>
+        <a class="info2" href="#rainsave_page08">實績案例</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js'></script>
+<script  src="/script.js"></script>
+
+</body>
+</html>
