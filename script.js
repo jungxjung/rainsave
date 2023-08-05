@@ -297,3 +297,6 @@ document.getElementById('clearId').onclick = () => {
   document.getElementById('table_totalpriceId_4_1').textContent = "" ;
 }
 
+$('iframe.yt-hd-thumbnail').youTubeHDThumbnail({
+	darkenThumbnail: false
+});
