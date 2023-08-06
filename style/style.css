@@ -1250,8 +1250,8 @@ a.company_intro_small {
   }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .card-body {
     height: 280px;
   }
-}
+} */
