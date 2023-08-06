@@ -1,3 +1,48 @@
+//document ready
+$(document).ready(function(){
+  var $videoSrc;
+  var modalID
+  $('.modal-video-btn').click(function() {
+      $videoSrc = $(this).data( "src" );
+      modalID = $(this).data("bs-target");
+      console.log($videoSrc);
+  });
+
+  // when the modal is opened, you can autoplayit or ...
+  // $(modalID + " ").on('shown.bs.modal', function (e) {
+  //   console.log("hello");
+  //   $(modalID + " iframe").attr('src',$videoSrc + "?autoplay=1");
+  
+  // })
+    
+  // stop playing the youtube video when I close the modal
+  //水平靠接
+  $("#hCombine").on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#hCombine iframe").attr('src',$videoSrc); 
+  })
+  
+  //正向卡接
+  $("#fCombine").on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#fCombine iframe").attr('src',$videoSrc);
+  })
+
+  //反向拼接
+  $("#bCombine").on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#bCombine iframe").attr('src',$videoSrc);
+  })
+
+  //側板安裝
+  $("#sideCombine").on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#sideCombine iframe").attr('src',$videoSrc);
+  })
+
+//document ready
+});
+
 //用Vue動態改所有頁面的重複資料-Header和Footer的基本資料+存放實績案例簡介資料+存放知識分享概要
 const vm = Vue.createApp({
   data () {
@@ -297,3 +342,4 @@ document.getElementById('clearId').onclick = () => {
   document.getElementById('table_totalpriceId_4').textContent = "" ;
   document.getElementById('table_totalpriceId_4_1').textContent = "" ;
 }
+
