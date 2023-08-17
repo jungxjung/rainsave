@@ -165,10 +165,15 @@ ul.nav {
   font-size: 1.2rem;
 }
 
-hr {
-  color: #1E3E96;
-  padding: 0;
+.bg-rainsave {
+  background-color: #1E3E96;
 }
+
+.text-rainsave {
+  color: #1E3E96;
+}
+
+
 .space_blank {
   height: 30px;
 }
@@ -261,29 +266,12 @@ hr {
 }
 
 .remind_box {
-  position: absolute;
   width: 100px;
   height: 100px;
-  border-radius: 100%;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  text-align: center;
-  padding: 6px;
-  color: #FFF;
   background-color: rgba(85, 85, 85, 0.5);
 }
 .remind_box:hover {
   cursor: default;
-}
-.remind_box .remind {
-  padding: 5px;
-  color: #FFF;
-}
-.remind_box i {
-  font-size: 1.2rem;
-  color: #FFF;
-  margin-right: 5px;
 }
 /*首頁-閱讀更多產品介紹*/
 .more {
@@ -623,9 +611,6 @@ ol.fw-normal.roman {
 }
 
 /*產品特點與安裝-10大5大*/
-.features {
-  width: 100%;
-}
 
 .text .line_feature {
   margin: 15px 0;
@@ -636,8 +621,6 @@ ol.fw-normal.roman {
   margin: 5px;
 }
 .title_m_2 {
-  font-size: 1rem;
-  font-weight: 500;
   color: #1E3E96;
   text-align: center;
   padding: 8px;
@@ -667,21 +650,11 @@ ol.fw-normal.roman {
 .size_info {
   position: absolute;
   list-style: none;
-  font-weight: 700;
   top: 23px;
   bottom: 390px;
   right: 30px;
 }
-.type {
-  text-align: center;
-  padding: 5px;
-  top: 30px;
-  width: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #1E3E96;
-  color: #FFF;
-}
+
 .short {
   width: 110%;
   top: -15px;
