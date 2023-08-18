@@ -39,9 +39,9 @@ $(document).ready(function(){
     // a poor man's stop video
     $("#sideCombine iframe").attr('src',$videoSrc);
   })
-
-//document ready
 });
+//document ready end
+
 
 //用Vue動態改所有頁面的重複資料-Header和Footer的基本資料+存放實績案例簡介資料+存放知識分享概要
 const vm = Vue.createApp({
@@ -166,7 +166,6 @@ const vm = Vue.createApp({
   }
 })
 vm.mount('html')
-
 
 
 
