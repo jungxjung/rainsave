@@ -62,10 +62,9 @@ html, body {
   filter: opacity(80%);
 }
 
-i {
-  color: #555;
+/* i {
   font-size: 30px;
-}
+} */
 
 .company_info {
   padding-top: 5px;
@@ -136,7 +135,6 @@ ul.nav {
 #rainsave_page08_case01,
 #rainsave_page00_knowledge {
   padding-top: 110px;
-  background-color: #FFF;
 }
 
 .wholecontent {
@@ -889,7 +887,7 @@ th {
 #table_totalpriceId_4, 
 #table_totalpriceId_4_1 {
   color: #1E3E96;
-  border: solid 1px #555;
+  border: solid 1px #494949;
   font-weight: 500;
 }
 #table_totalpriceId_1, 
