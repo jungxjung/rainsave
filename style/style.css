@@ -115,7 +115,7 @@ ul.nav {
   background-color: #FFF;
 }
 
-.active {
+.active, .nav-link .product{
   color: #FFF;
   background-color: #1E3E96;
 }

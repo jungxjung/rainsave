@@ -164,8 +164,65 @@ const vm = Vue.createApp({
 
     }
   }
+});
+
+// header和footer都會用到的公司基本資訊
+ const $headerFooterCommon= {
+  address: '台北市北投區清江路247巷8號1樓',
+  tel_number: '(02)2898-6207',
+  fax_number: '(02)2898-6132',
+  email: 'rainmaster@rainmaster.com',
+  active: 'home'
+ };
+
+
+vm.component('my-header', {
+  template: `
+  <nav class="navbar navbar-expand-md fixed-top top_1">
+    <div class="container-fluid"><a class="navbar-brand" href="/index.html"> <img class="d-inline-block align-text-top" src="/images/rainsave_brandicon.png" alt="Rain SAVE 儲集框架" width="60"/>
+        <div class="brand d-inline-block align-text-top"> 
+          <h3 class="rainsave">Rain SAVE 儲集框架</h3><img class="company_name" src="/images/company_name+logo.png" alt="正在旺企業有限公司" width="180"/>
+        </div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-telegram"> </i></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="company_info ms-auto">
+          <div class="line"></div>
+          <div class="addr">地址：{{ address }}</div>
+          <div class="tel_fax">電話：{{ tel_number }} / 傳真：{{ fax_number }}</div>
+          <div class="email">E-mail：{{ email }}</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header id="rainsave_page01">
+    <nav class="navbar navbar-expand-md fixed-top top_2">
+      <button class="navbar-toggler ms-auto nav_hide" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
+        <ul class="nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page01.html">產品大樣與特點</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page04.html">保水型與滲透型</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page07.html">地震淺變性</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page06.html">使用須知</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page05.html">需求計算與資源下載</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/page08.html">實績案例</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>`,
+  data () {
+    return $headerFooterCommon; 
+  },
+  methods: {
+		makeActive: function(item){
+			// When a model is changed, the view will be automatically updated.
+			this.active = item;
+		}
+	}
+
 })
-vm.mount('html')
+
+vm.mount('html');
 
 
 

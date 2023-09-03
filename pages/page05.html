@@ -19,46 +19,7 @@
   <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<nav class="navbar navbar-expand-md fixed-top top_1">
-  <div class="container-fluid"><a class="navbar-brand" href="/index.html"> <img class="d-inline-block align-text-top" src="/images/rainsave_brandicon.png" alt="Rain SAVE 儲集框架" width="60"/>
-      <div class="brand d-inline-block align-text-top"> 
-        <h3 class="rainsave">Rain SAVE 儲集框架</h3><img class="company_name" src="/images/company_name+logo.png" alt="正在旺企業有限公司" width="180"/>
-      </div></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-telegram"> </i></button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="company_info ms-auto">
-        <div class="line"></div>
-        <div class="addr">地址：{{ address }}</div>
-        <div class="tel_fax">電話：{{ tel_number }} / 傳真：{{ fax_number }}</div>
-        <div class="email">E-mail：{{ email }}</div>
-      </div>
-    </div>
-  </div>
-</nav>
-<header id="rainsave_page05">
-  <nav class="navbar navbar-expand-md fixed-top top_2">
-    <button class="navbar-toggler ms-auto nav_hide" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
-      <ul class="nav ms-auto">
-        <!-- <li class="nav-item"><a class="nav-link" aria-current="page" href="/index.html">首頁</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="/pages/page01.html">產品大樣與特點</a></li>
-        <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">產品大樣</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/pages/page02-1.html">儲集框架主體</a></li>
-            <li><a class="dropdown-item" href="/pages/page02-2.html">儲集框架側板</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="/pages/page03.html">資源下載</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="/pages/page04.html">保水型與滲透型</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/page07.html">地震淺變性</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/page06.html">使用須知</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/pages/page05.html">需求計算與資源下載</a></li>
-        <li class="nav-item"><a class="nav-link" href="/pages/page08.html">實績案例</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+  <my-header></my-header>
   <div class="container">
     <h1 class="title">Rain SAVE 需求數量計算</h1>
     <div class="row wholecontent">
