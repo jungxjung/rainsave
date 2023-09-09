@@ -411,7 +411,7 @@
               <source srcset="/images/page01/h_combine.avif" type="image/avif" />
               <img class="img-thumbnail" src="/images/page01/h_combine2.png" alt="水平靠接設計">
             </picture>
-            <button class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-src="https://www.youtube.com/embed/TsG9VYiWu7w" data-bs-toggle="modal" data-bs-target="#hCombine"><span class="bi bi-youtube me-1"></span>水平靠接安裝說明</button>
+            <button class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-bs-toggle="modal" data-bs-target="#hCombine" onclick="openYTModal('#hCombine','TsG9VYiWu7w')"><span class="bi bi-youtube me-1"></span>水平靠接安裝說明</button>
           </div>
           <div class="col-md-4 my-4 my-md-3">
             <h6>正向卡接設計</h6>
@@ -419,7 +419,7 @@
               <source srcset="/images/page01/f_combine.avif" type="image/avif" />
               <img class="img-thumbnail" src="/images/page01/f_combine2.png" alt="正向卡接設計">
             </picture>
-            <button class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-src="https://www.youtube.com/embed/KDPVOEMfAXY" data-bs-toggle="modal" data-bs-target="#fCombine"><span class="bi bi-youtube me-1"></span>正向卡接安裝說明</button>
+            <button class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-bs-toggle="modal" data-bs-target="#fCombine" onclick="openYTModal('#fCombine','KDPVOEMfAXY')"><span class="bi bi-youtube me-1"></span>正向卡接安裝說明</button>
           </div>
           <div class="col-md-4 my-4 my-md-3">
             <h6>反向拼接設計</h6>
@@ -427,7 +427,7 @@
               <source srcset="/images/page01/b_combine.avif" type="image/avif" />
               <img class="img-thumbnail" src="/images/page01/b_combine2.png" alt="反向拼接設計">
             </picture>
-            <button class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-src="https://www.youtube.com/embed/a_2UmSCWw_M" data-bs-toggle="modal" data-bs-target="#bCombine"><span class="bi bi-youtube me-1"></span>反向拼接安裝說明</button>
+            <button class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-bs-toggle="modal" data-bs-target="#bCombine" onclick="openYTModal('#bCombine','a_2UmSCWw_M')"><span class="bi bi-youtube me-1"></span>反向拼接安裝說明</button>
           </div>
         </div>
         <!-- 1要訣 -->
@@ -440,7 +440,7 @@
               <source srcset="/images/page01/side_combine.avif" type="image/avif" />
               <img class="img-thumbnail" src="/images/page01/side_combine2.png" alt="側板安裝1要訣">
             </picture>
-            <button type="button" class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-src="https://www.youtube.com/embed/O-7B43gLh-M" data-bs-toggle="modal" data-bs-target="#sideCombine"><span class="bi bi-youtube me-1"></span>側板安裝說明</button>
+            <button type="button" class="btn btn-outline-primary border-2 mt-3 modal-video-btn" data-bs-toggle="modal" data-bs-target="#sideCombine" onclick="openYTModal('#sideCombine','O-7B43gLh-M')"><span class="bi bi-youtube me-1"></span>側板安裝說明</button>
           </div>
         </div>
       </div>
@@ -452,15 +452,13 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="hCombineLabel">水平靠接安裝說明</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#hCombine','TsG9VYiWu7w')"></button>
               </div>
               <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                  <iframe class="shadow" src="https://www.youtube.com/embed/TsG9VYiWu7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <div class="modal-yt-container ratio ratio-16x9"></div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#hCombine','TsG9VYiWu7w')">關閉</button>
               </div>
             </div>
           </div>
@@ -471,15 +469,13 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="fCombineLabel">正向卡接安裝說明</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#fCombine','KDPVOEMfAXY')"></button>
               </div>
               <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                  <iframe class="shadow" src="https://www.youtube.com/embed/KDPVOEMfAXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <div class="modal-yt-container ratio ratio-16x9"></div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#fCombine','KDPVOEMfAXY')">關閉</button>
               </div>
             </div>
           </div>
@@ -490,15 +486,13 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="bCombineLabel">反向拼接安裝說明</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#bCombine','a_2UmSCWw_M')"></button>
             </div>
             <div class="modal-body">
-              <div class="ratio ratio-16x9">
-                <iframe class="shadow" src="https://www.youtube.com/embed/a_2UmSCWw_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
+              <div class="modal-yt-container ratio ratio-16x9"></div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary border-2 modal-video-btn" data-bs-dismiss="modal">關閉</button>
+              <button type="button" class="btn btn-outline-primary border-2 modal-video-btn" data-bs-dismiss="modal" onclick="stopYT('#bCombine','a_2UmSCWw_M')">關閉</button>
             </div>
           </div>
         </div>
@@ -512,15 +506,13 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="sideCombineLabel">側板安裝說明</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#sideCombine','O-7B43gLh-M')"></button>
               </div>
               <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                  <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/O-7B43gLh-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <div class="modal-yt-container ratio ratio-16x9"></div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#sideCombine','O-7B43gLh-M')">關閉</button>
               </div>
             </div>
           </div>
@@ -530,22 +522,12 @@
        <!--教學影片 -->
       <div>
         <h1 class="title my-5">Rain SAVE 安裝教學</h1>
-        <!-- <div class="mt-5">
-          <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-            <iframe class="product_film shadow" src="https://www.youtube.com/embed/K5l3-gOUh_E"   srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/K5l3-gOUh_E?autoplay=1><img src=https://i.ytimg.com/vi/K5l3-gOUh_E/maxresdefault.jpg alt='五大特性'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-          </div>
-        </div>
-        <div class="mt-5">
-          <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-            <iframe class="shadow" src="https://www.youtube.com/embed/97jlR6QYJp0" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/97jlR6QYJp0?autoplay=1><img src=https://i.ytimg.com/vi/97jlR6QYJp0/maxresdefault.jpg alt='安裝教學'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-          </div>
-        </div> -->
       </div>
 
       <div class="row mt-5">
         <div class="col-12">
           <div class="w-100">
-            <a type="button" data-target="#mainIntroV" onclick="$('#mainIntroV').modal('toggle')">
+            <a class="modal-video-btn" data-src="" type="button" data-target="#mainIntroV" onclick="openYTModal('#mainIntroV','jYrx4BIlhVY')">
               <div class="position-relative">
                 <img class="w-100" src="/images/page01/video_thumbnail/mainV.avif" alt="雨水積磚(儲集框架)施工影片-">
                 <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
@@ -558,7 +540,7 @@
       <!--教學影片 小項目 -->
       <div class="row justify-content-between mt-5">
         <div class="col-6 col-md-4 my-4 my-md-3">
-          <a type="button" data-target="#waterproofV" onclick="$('#waterproofV').modal('toggle')">
+          <a type="button" data-target="#waterproofV" onclick="openYTModal('#waterproofV','l5Gy6F23adc')">
             <div class="">
               <picture>
                 <source srcset="/images/page01/video_thumbnail/waterproof.avif" type="image/avif" />
@@ -573,7 +555,7 @@
           </p>
         </div>
         <div class="col-6 col-md-4 my-4 my-md-3">
-          <a type="button" data-target="#fabricSetupV" onclick="$('#fabricSetupV').modal('toggle')">
+          <a type="button" data-target="#fabricSetupV" onclick="openYTModal('#fabricSetupV','zsqtKEROwdg')">
             <div class="border rounded">
               <picture>
                 <source srcset="/images/page01/video_thumbnail/fabricSetup.avif" type="image/avif" />
@@ -588,7 +570,7 @@
           </p>
         </div>
         <div class="col-6 col-md-4 my-4 my-md-3">
-          <a type="button" data-target="#implementV" onclick="$('#implementV').modal('toggle')">
+          <a type="button" data-target="#implementV" onclick="openYTModal('#implementV','b5H9QtWJRcY')">
             <div class="border rounded">
               <picture>
                 <source srcset="/images/page01/video_thumbnail/implement.avif" type="image/avif" />
@@ -598,7 +580,7 @@
             </div>
           </a>
           <p class="text-primary">
-            儲集框架 不織布鋪設 短片 <br>
+            儲集框架 安裝短片 <br>
             by 石頭哥
           </p>
         </div>
@@ -610,22 +592,14 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="MainIntro">雨水積磚(儲集框架)施工影片</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#mainIntroV').modal('hide')">
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#mainIntroV', 'jYrx4BIlhVY')">
               </button>
             </div>
             <div class="modal-body">
-              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-                <a type="button" onclick="insertYT(this,'jYrx4BIlhVY')">
-                  <div class="position-relative">
-                    <img class="w-100" src="/images/page01/video_thumbnail/mainV.avif" alt="雨水積磚(儲集框架)施工影片-">
-                    <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
-                  </div>
-                </a>
-                <!-- <iframe class="shadow" src="https://www.youtube.com/embed/jYrx4BIlhVY" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/jYrx4BIlhVY?autoplay=1><img src=https://i.ytimg.com/vi/jYrx4BIlhVY/maxresdefault.jpg alt='施工影片'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
-              </div>
+              <div class="ratio ratio-16x9 modal-yt-container"></div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#mainIntroV').modal('hide')">關閉</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#mainIntroV', 'jYrx4BIlhVY')">關閉</button>
             </div>
           </div>
         </div>
@@ -637,25 +611,14 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="waterproof">不透水布施工方式 雨水管理大師</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#waterproofV').modal('hide')">
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#waterproofV','l5Gy6F23adc')">
               </button>
             </div>
             <div class="modal-body">
-              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-                <a type="button" data-target="#waterproofV" onclick="insertYT(this, 'l5Gy6F23adc')">
-                  <div>
-                    <picture class="ratio ratio-16x9">
-                      <source srcset="/images/page01/video_thumbnail/waterproof.avif" type="image/avif" />
-                      <img class="w-100" src="/images/page01/h_combine2.png" alt="不透水布施工方式">
-                    </picture>
-                    <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
-                  </div>
-                </a>
-                <!-- <iframe class="shadow" src="https://www.youtube.com/watch?v=l5Gy6F23adc" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/l5Gy6F23adc?autoplay=1><img src=https://i.ytimg.com/vi/l5Gy6F23adc/maxresdefault.jpg alt='不透水布施工方式'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
-              </div>
+              <div class="modal-yt-container ratio ratio-16x9"></div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#waterproofV').modal('hide')">關閉</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#waterproofV','l5Gy6F23adc')">關閉</button>
             </div>
           </div>
         </div>
@@ -667,25 +630,14 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="fabricSetup">不透水布施工方式 雨水管理大師</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#fabricSetupV').modal('hide')">
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#fabricSetupV','zsqtKEROwdg')">
               </button>
             </div>
             <div class="modal-body">
-              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-                <a type="button" data-target="#fabricSetupV" onclick="insertYT(this, 'zsqtKEROwdg')">
-                  <div class="">
-                    <picture class="ratio ratio-16x9">
-                      <source srcset="/images/page01/video_thumbnail/fabricSetup.avif" type="image/avif" />
-                      <img class="img-fluid" src="/images/page01/f_combine2.png" alt="儲集框架-不織布鋪設方式">
-                    </picture>
-                    <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
-                  </div>
-                </a>
-                <!-- <iframe class="shadow" src="https://www.youtube.com/watch?v=zsqtKEROwdg" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/zsqtKEROwdg?autoplay=1><img src=https://i.ytimg.com/vi/zsqtKEROwdg/maxresdefault.jpg alt='不透水布施工方式'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
-              </div>
+              <div class="modal-yt-container ratio ratio-16x9"></div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#fabricSetupV').modal('hide')">關閉</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#fabricSetupV','zsqtKEROwdg')">關閉</button>
             </div>
           </div>
         </div>
@@ -697,25 +649,14 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="implement">雨水積磚(儲集框架) 安裝教學</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#implementV').modal('hide')">
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#implementV', 'b5H9QtWJRcY')">
               </button>
             </div>
             <div class="modal-body">
-              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-                <a type="button" data-target="#implementV" onclick="insertYT(this,'b5H9QtWJRcY')">
-                  <div class="">
-                    <picture class="ratio ratio-16x9">
-                      <source srcset="/images/page01/video_thumbnail/implement.avif" type="image/avif" />
-                      <img class="img-fluid" src="/images/page01/b_combine2.png" alt="雨水積磚(儲集框架) 安裝教學 正在旺">
-                    </picture>
-                    <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
-                  </div>
-                </a>
-                <!-- <iframe class="shadow" src="https://www.youtube.com/watch?v=b5H9QtWJRcY" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/b5H9QtWJRcY?autoplay=1><img src=https://i.ytimg.com/vi/b5H9QtWJRcY/maxresdefault.jpg alt='安裝教學'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
-              </div>
+              <div class="modal-yt-container ratio ratio-16x9"></div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#implementV').modal('hide')">關閉</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#implementV', 'b5H9QtWJRcY')">關閉</button>
             </div>
           </div>
         </div>

@@ -1,62 +1,32 @@
 //document ready
 $(document).ready(function(){
-  var $videoSrc;
-  var modalID
-  $('.modal-video-btn').click(function() {
-      $videoSrc = $(this).data( "src" );
-      modalID = $(this).data("bs-target");
-      console.log($videoSrc);
-  });
-
-  // when the modal is opened, you can autoplayit or ...
-  // $(modalID + " ").on('shown.bs.modal', function (e) {
-  //   console.log("hello");
-  //   $(modalID + " iframe").attr('src',$videoSrc + "?autoplay=1");
-  
-  // })
-    
-  // stop playing the youtube video when I close the modal
-  //水平靠接
-  $("#hCombine").on('hide.bs.modal', function (e) {
-      // a poor man's stop video
-      $("#hCombine iframe").attr('src',$videoSrc); 
-  })
-  
-  //正向卡接
-  $("#fCombine").on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#fCombine iframe").attr('src',$videoSrc);
-  })
-
-  //反向拼接
-  $("#bCombine").on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#bCombine iframe").attr('src',$videoSrc);
-  })
-
-  //側板安裝
-  $("#sideCombine").on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#sideCombine iframe").attr('src',$videoSrc);
-  })
 });
 //document ready end
 
 
-function insertYT(thisE, link){
-  console.log("Hi");
-  if (thisE.childNodes.length > 0) {
-    // Get the first child node
-    var firstChild = thisE.childNodes[0];
-    firstChild.remove();
+function openYTModal(modalID, link){
+  $(modalID).modal('toggle');
+  var oldIframe = document.querySelector(modalID + ' iframe');
+  if (oldIframe) {
+    oldIframe.remove();
   }
-
   var iframe = document.createElement('iframe');
   iframe.src = 'https://www.youtube.com/embed/' + link;
   iframe.allowFullscreen = true;
   iframe.classList.add('shadow');
+  document.querySelector(modalID + ' .modal-yt-container').append(iframe);
+  
+}
 
-  thisE.after(iframe);
+
+function stopYT(parentID, link){
+  $(parentID).modal('hide');
+  var iframe = document.querySelector(parentID + ' iframe');
+  if (iframe) {
+    iframe.src = 'https://www.youtube.com/embed/' + link;
+    iframe.allowFullscreen = true;
+    iframe.classList.add('shadow');
+  }
 }
 
 //用Vue動態改所有頁面的重複資料-Header和Footer的基本資料+存放實績案例簡介資料+存放知識分享概要
