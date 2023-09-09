@@ -177,11 +177,18 @@ ul.nav {
 }
 
 .video_play_btn {
-  font:48px/1.5 sans-serif;
-  transition:font-size 0.3s;
+  transition:width 0.5s, height 0.5s;
 }
 .video_play_btn:hover{
-  font-size:60px;
+  width: 110px;
+}
+
+.video_play_btn_s {
+  width: 50px;
+  transition:width 0.3s, height 0.3s;
+}
+.video_play_btn_s:hover{
+  width: 55px;
 }
 
 
