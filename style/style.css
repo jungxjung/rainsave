@@ -176,6 +176,14 @@ ul.nav {
   height: 30px;
 }
 
+.video_play_btn {
+  font:48px/1.5 sans-serif;
+  transition:font-size 0.3s;
+}
+.video_play_btn:hover{
+  font-size:60px;
+}
+
 
 /*個別調整_首頁*/
 /*首頁-標頭首頁視覺照*/

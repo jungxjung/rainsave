@@ -540,7 +540,7 @@
 
 
  
-      <div class="">
+      <div>
         <h1 class="title my-5">Rain SAVE 安裝教學</h1>
         <div class="mt-5">
           <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
@@ -552,10 +552,52 @@
             <iframe class="shadow" src="https://www.youtube.com/embed/97jlR6QYJp0" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/97jlR6QYJp0?autoplay=1><img src=https://i.ytimg.com/vi/97jlR6QYJp0/maxresdefault.jpg alt='安裝教學'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
         </div>
-        <div class="mt-5">
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="w-100">
+            <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
+              <div class="position-relative">
+                <img class="w-100 object-fit-none" src="https://i.ytimg.com/vi/97jlR6QYJp0/maxresdefault.jpg" alt="安裝教學">
+                <p class="video_play_btn text-white position-absolute top-50 start-50 translate-middle" >▶&#xFE0E;</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between mt-5">
+        <div class="col-md-4 my-4 my-md-3">
           <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
-            <div>
-              <img class="rounded" src="https://i.ytimg.com/vi/97jlR6QYJp0/maxresdefault.jpg" alt="安裝教學">
+            <div class="border rounded">
+              <picture>
+                <source srcset="/images/page01/h_combine.avif" type="image/avif" />
+                <img class="img-fluid" src="/images/page01/h_combine2.png" alt="水平靠接設計">
+              </picture>
+              <p class="video_play_btn text-white position-absolute top-50 start-50 translate-middle" >▶&#xFE0E;</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 my-4 my-md-3">
+          <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
+            <div class="border rounded">
+              <picture>
+                <source srcset="/images/page01/f_combine.avif" type="image/avif" />
+                <img class="img-fluid" src="/images/page01/f_combine2.png" alt="正向卡接設計">
+              </picture>
+              <p class="video_play_btn text-white position-absolute top-50 start-50 translate-middle" >▶&#xFE0E;</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 my-4 my-md-3">
+          <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
+            <div class="border rounded">
+              <picture>
+                <source srcset="/images/page01/b_combine.avif" type="image/avif" />
+                <img class="img-fluid" src="/images/page01/b_combine2.png" alt="反向拼接設計">
+              </picture>
+              <p class="video_play_btn text-white position-absolute top-50 start-50 translate-middle" >▶&#xFE0E;</p>
             </div>
           </a>
         </div>
@@ -567,8 +609,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#exampleModal').modal('hide')">
-                <span aria-hidden="true">&times;</span>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#exampleModal').modal('hide')">
               </button>
             </div>
             <div class="modal-body">
@@ -577,7 +618,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="$('#exampleModal').modal('hide')">Close</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#exampleModal').modal('hide')">關閉</button>
             </div>
           </div>
         </div>
