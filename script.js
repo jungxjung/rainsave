@@ -43,6 +43,23 @@ $(document).ready(function(){
 //document ready end
 
 
+function insertYT(thisE, link){
+  console.log("Hi");
+  if (thisE.childNodes.length > 0) {
+    // Get the first child node
+    var firstChild = thisE.childNodes[0];
+    // Change the CSS display property to "none" to hide the first child
+    firstChild.remove();
+  }
+
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/' + link;
+  iframe.allowFullscreen = true;
+  iframe.classList.add('shadow');
+
+  thisE.after(iframe);
+}
+
 //用Vue動態改所有頁面的重複資料-Header和Footer的基本資料+存放實績案例簡介資料+存放知識分享概要
 const vm = Vue.createApp({
   data () {
