@@ -25,20 +25,8 @@
     <h1 class="title pt-5 my-5">Rain SAVE 主體大樣尺寸</h1>
     <h5 class="title_m mt-3">儲集框架主體</h5>
     <div class="row">
-      <div class="col-md-6">
-        <iframe class="model" width="100%" height="100%" style="min-height: 520px;" src="https://my.spline.design/rainsavetest2-a58d6a5ad1b8607f93a239fab5f67f0c/" frameborder="0"></iframe>
-        <ul class="size_info">
-          <li class="size">一個單元：</li>
-          <li class="size">長-50cm</li>
-          <li class="size">寬-50cm</li>
-          <li class="size">高-25cm</li>
-        </ul>
-        <div class="hidelogo position-absolute">
-          <div class="size">*此為2個單元組合而成</div>
-        </div>
-        <div class="remind_box p-2 position-absolute top-50 start-50 translate-middle rounded-circle text-center text-white">
-          <div class="text-white">360°<br>旋轉檢視</div><i class="fas fa-mouse-pointer text-white"></i>
-        </div>
+      <div class="sketchfab-embed-wrapper col-md-6">
+        <iframe width="100%" height="500px" title="儲集框架主體-雨水管理大師" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b75c9be1b6794b3baa9d8d89095f0c4c/embed"> </iframe>
       </div>
       <div class="col-md-6 px-md-2">
         <div class="row justify-content-center">
@@ -539,7 +527,7 @@
         </div>
 
 
- 
+       <!--教學影片 -->
       <div>
         <h1 class="title my-5">Rain SAVE 安裝教學</h1>
         <div class="mt-5">
@@ -557,9 +545,9 @@
       <div class="row mt-5">
         <div class="col-12">
           <div class="w-100">
-            <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
+            <a type="button" data-target="#mainIntroV" onclick="$('#mainIntroV').modal('toggle')">
               <div class="position-relative">
-                <img class="w-100 object-fit-none" src="https://i.ytimg.com/vi/97jlR6QYJp0/maxresdefault.jpg" alt="安裝教學">
+                <img class="w-100" src="/images/page01/video_thumbnail/mainV.avif" alt="雨水積磚(儲集框架)施工影片-">
                 <p class="video_play_btn text-white position-absolute top-50 start-50 translate-middle" >▶&#xFE0E;</p>
               </div>
             </a>
@@ -567,35 +555,36 @@
         </div>
       </div>
 
+      <!--教學影片 小項目 -->
       <div class="row justify-content-between mt-5">
         <div class="col-md-4 my-4 my-md-3">
-          <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
-            <div class="border rounded">
+          <a type="button" data-target="#waterproofV" onclick="$('#waterproofV').modal('toggle')">
+            <div class="">
               <picture>
-                <source srcset="/images/page01/h_combine.avif" type="image/avif" />
-                <img class="img-fluid" src="/images/page01/h_combine2.png" alt="水平靠接設計">
+                <source srcset="/images/page01/video_thumbnail/waterproof.avif" type="image/avif" />
+                <img class="img-fluid rounded-3" src="/images/page01/h_combine2.png" alt="不透水布施工方式">
               </picture>
-              <p class="video_play_btn text-white position-absolute top-50 start-50 translate-middle" ><i class="bi bi-play-btn-fill"></i></p>
+              <span class="video_play_btn text-danger position-absolute top-50 start-50 translate-middle" ><i class="bi bi-play-btn-fill"></i></span>
             </div>
           </a>
         </div>
         <div class="col-md-4 my-4 my-md-3">
-          <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
+          <a type="button" data-target="#fabricSetupV" onclick="$('#fabricSetupV').modal('toggle')">
             <div class="border rounded">
               <picture>
-                <source srcset="/images/page01/f_combine.avif" type="image/avif" />
-                <img class="img-fluid" src="/images/page01/f_combine2.png" alt="正向卡接設計">
+                <source srcset="/images/page01/video_thumbnail/fabricSetup.avif" type="image/avif" />
+                <img class="img-fluid rounded-3" src="/images/page01/f_combine2.png" alt="儲集框架-不織布鋪設方式">
               </picture>
               <p class="video_play_btn text-danger position-absolute top-50 start-50 translate-middle" ><i class="bi bi-play-circle-fill"></i></p>
             </div>
           </a>
         </div>
         <div class="col-md-4 my-4 my-md-3">
-          <a type="button" data-target="#exampleModal" onclick="$('#exampleModal').modal('toggle')">
+          <a type="button" data-target="#implementV" onclick="$('#implementV').modal('toggle')">
             <div class="border rounded">
               <picture>
-                <source srcset="/images/page01/b_combine.avif" type="image/avif" />
-                <img class="img-fluid" src="/images/page01/b_combine2.png" alt="反向拼接設計">
+                <source srcset="/images/page01/video_thumbnail/implement.avif" type="image/avif" />
+                <img class="img-fluid rounded-3" src="/images/page01/b_combine2.png" alt="雨水積磚(儲集框架) 安裝教學 正在旺">
               </picture>
               <p class="video_play_btn text-danger position-absolute top-50 start-50 translate-middle" ><i class="bi bi-play-btn"></i></p>
             </div>
@@ -603,22 +592,85 @@
         </div>
       </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal 主影片- 雨水積磚(儲集框架)施工影片-->
+      <div class="modal fade" id="mainIntroV" tabindex="-1" role="dialog" aria-labelledby="mainIntro" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#exampleModal').modal('hide')">
+              <h5 class="modal-title" id="MainIntro">雨水積磚(儲集框架)施工影片-</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#mainIntroV').modal('hide')">
               </button>
             </div>
             <div class="modal-body">
               <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
-                <iframe class="shadow" src="https://www.youtube.com/embed/97jlR6QYJp0" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/97jlR6QYJp0?autoplay=1><img src=https://i.ytimg.com/vi/97jlR6QYJp0/maxresdefault.jpg alt='安裝教學'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <iframe class="shadow" src="https://www.youtube.com/embed/jYrx4BIlhVY" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/jYrx4BIlhVY?autoplay=1><img src=https://i.ytimg.com/vi/jYrx4BIlhVY/maxresdefault.jpg alt='施工影片'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#exampleModal').modal('hide')">關閉</button>
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#mainIntroV').modal('hide')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 小影片 防水布影片 -->
+      <div class="modal fade" id="waterproofV" tabindex="-1" role="dialog" aria-labelledby="waterproof" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="waterproof">不透水布施工方式 雨水管理大師</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#waterproofV').modal('hide')">
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
+                <iframe class="shadow" src="https://www.youtube.com/watch?v=l5Gy6F23adc" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/l5Gy6F23adc?autoplay=1><img src=https://i.ytimg.com/vi/l5Gy6F23adc/maxresdefault.jpg alt='不透水布施工方式'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#waterproofV').modal('hide')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 小影片 儲集框架-不織布鋪設方式 -->
+      <div class="modal fade" id="fabricSetupV" tabindex="-1" role="dialog" aria-labelledby="fabricSetup" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="fabricSetup">不透水布施工方式 雨水管理大師</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#fabricSetupV').modal('hide')">
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
+                <iframe class="shadow" src="https://www.youtube.com/watch?v=zsqtKEROwdg" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/zsqtKEROwdg?autoplay=1><img src=https://i.ytimg.com/vi/zsqtKEROwdg/maxresdefault.jpg alt='不透水布施工方式'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#fabricSetupV').modal('hide')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 小影片 雨水積磚(儲集框架) 安裝教學 正在旺 -->
+      <div class="modal fade" id="implementV" tabindex="-1" role="dialog" aria-labelledby="implement" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="implement">雨水積磚(儲集框架) 安裝教學</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="$('#implementV').modal('hide')">
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mx-auto ratio ratio-16x9" style="width: 100%; max-width: 850px;">
+                <iframe class="shadow" src="https://www.youtube.com/watch?v=b5H9QtWJRcY" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black;transition:font-size 0.3s;}span:hover{text-shadow:0 0 0.3em black;font-size:60px;}</style><a href=https://www.youtube.com/embed/b5H9QtWJRcY?autoplay=1><img src=https://i.ytimg.com/vi/b5H9QtWJRcY/maxresdefault.jpg alt='安裝教學'><span>▶&#xFE0E;</span></a>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="$('#implementV').modal('hide')">關閉</button>
             </div>
           </div>
         </div>
