@@ -4,6 +4,7 @@ $(document).ready(function(){
 //document ready end
 
 
+//打開modal時，同時帶入相對應的yt連結，modalID為將打開的modal ID, link為應帶入的yt影片ID
 function openYTModal(modalID, link){
   $(modalID).modal('toggle');
   var oldIframe = document.querySelector(modalID + ' iframe');
@@ -18,7 +19,7 @@ function openYTModal(modalID, link){
   
 }
 
-
+//關閉modal時，同時關閉yt影片，parentID為modal ID, link為應關閉的yt影片ID，
 function stopYT(parentID, link){
   $(parentID).modal('hide');
   var iframe = document.querySelector(parentID + ' iframe');
