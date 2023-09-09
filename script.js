@@ -48,7 +48,6 @@ function insertYT(thisE, link){
   if (thisE.childNodes.length > 0) {
     // Get the first child node
     var firstChild = thisE.childNodes[0];
-    // Change the CSS display property to "none" to hide the first child
     firstChild.remove();
   }
 
