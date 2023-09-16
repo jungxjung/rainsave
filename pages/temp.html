@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+ <div id="anime"></div>
+ <script>
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('anime'),
+        path: '/images/page01/animation/360pointer.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: "Demo Animation",
+    }); 
+ </script>
+ <div style="margin-left: 500px;">
+    <img id="animation-demo" class="animated shake" src="https://www.html-code-generator.com/images/HTMLpicture.png">
+ </div>
+ <br>
  <img class="img-thumbnail" src="/images/avif/a7y8l-z3jrq.avif" alt="">
  <img src="/images/avif/CAD (1).avif" alt="">
  <img src="/images/avif/CAD (2).avif" alt="">

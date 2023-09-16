@@ -191,6 +191,38 @@ ul.nav {
   width: 55px;
 }
 
+/* 左右動畫 */
+#animation-demo {
+	width: 200px;
+	height: 150px;
+	position: relative;
+} 
+
+.animated {
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes shake { 
+    0%, 100%{-webkit-transform: translateX(0);} 
+    33%{-webkit-transform: translateX(-200px);} 
+    66%{-webkit-transform: translateX(200px);} 
+} 
+@keyframes shake { 
+  0%, 50%, 100%{-webkit-transform: translateX(0);} 
+  25%{-webkit-transform: translateX(-200px);} 
+  75%{-webkit-transform: translateX(200px);} 
+} 
+.shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+}
+/* 左右動畫end */
+
 
 /*個別調整_首頁*/
 /*首頁-標頭首頁視覺照*/
