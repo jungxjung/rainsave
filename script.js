@@ -186,9 +186,7 @@ vm.component('my-header', {
       <button class="navbar-toggler ms-auto nav_hide" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
         <ul class="nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/index.html">首頁</a></li>
           <li class="nav-item"><a class="nav-link" href="/pages/page01.html">產品大樣與特點</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/page04.html">保水型與滲透型</a></li>
           <li class="nav-item"><a class="nav-link" href="/pages/page07.html">地震淺變性</a></li>
           <li class="nav-item"><a class="nav-link" href="/pages/page06.html">使用須知</a></li>
           <li class="nav-item"><a class="nav-link" href="/pages/page05.html">需求計算與資源下載</a></li>

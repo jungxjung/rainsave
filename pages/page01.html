@@ -128,10 +128,11 @@
         <div class="col-md-6 col-lg-5 mx-auto d-flex flex-column justify-content-center">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-7 text-center text-md-start">
-              <p class="mb-1 fs-5">儲集框架主體展示影片</p>
+              <p class="mb-1 fs-5"></p>
             </div>
             <div class="col-md-5 text-center text-md-end p-md-0">
-              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>側板安裝說明</button>
+              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>儲集框架主體展示影片</button>
+              <!-- https://youtu.be/1sesLta9IrI -->
             </div>
             <hr class="mt-3">
           </div>
@@ -149,7 +150,8 @@
                 <p class="mb-1 fs-5">水平靠接時具有四向拼接功能</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>水平靠接安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb1" onclick="openYTModal('#thumb1','zheGcSyd7Dc')"><i class="bi bi-youtube me-1"></i>水平靠接安裝說明</button>
+                <!-- https://youtu.be/zheGcSyd7Dc -->
               </div>
             </div>
             <hr class="mt-3">
@@ -165,10 +167,11 @@
             </div>
             <div class="row d-flex flex-column col-9 flex-md-row col-md-10 g-md-0 align-items-center">
               <div class="col-md-6">
-                <p class="mb-1 fs-5">正向卡接時各支撐柱亦具有四向拼接功能</p>
+                <p class="mb-1 fs-5">反向安裝時的四點拼接定位設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>水平靠接安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>反向安裝說明</button>
+                <!-- https://youtu.be/i5ybD3bxvO0 -->
               </div>
             </div>
             <hr class="mt-3">
@@ -187,7 +190,7 @@
                 <p class="mb-1 fs-5">一通到底型的大開口設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>水平靠接安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>一通到底說明影片</button>
               </div>
             </div>
 
@@ -203,16 +206,37 @@
             </div>
             <div class="row d-flex flex-column col-9 flex-md-row col-md-10 g-md-0 align-items-center">
               <div class="col-md-6">
-                <p class="mb-1 fs-5">反向安裝時的四點拼接定位設計</p>
+                <p class="mb-1 fs-5">垂直卡接時各支撐柱具有卡接功能</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>水平靠接安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>垂直卡接安裝說明</button>
+                <!-- https://youtu.be/w77_6zDNPEU -->
               </div>
             </div>
             <hr class="mt-3">
           </div>
         </div>
       </div>
+
+      <!-- modal 1-4項 -->
+      <div class="modal fade" id="thumb1" tabindex="-1" aria-labelledby="thumb1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb1Label">水平靠接安裝說明</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#thumb1','zheGcSyd7Dc')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#thumb1','zheGcSyd7Dc')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end modal 1-4項 -->
+
       <div class="row">
         <div class="col-md-6 col-lg-5 mx-auto text-center">
           <picture>
@@ -224,10 +248,11 @@
         <div class="col-md-6 col-lg-5 mx-auto d-flex flex-column justify-content-center mt-5">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-7 text-center text-md-start">
-              <p class="mb-1 fs-5">儲集框架展示影片</p>
+              <!-- <p class="mb-1 fs-5">儲集框架展示影片</p> -->
             </div>
             <div class="col-md-5 text-center text-md-end p-md-0">
-              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>側板安裝說明</button>
+              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>儲集框架側板展示影片</button>
+              <!-- https://youtu.be/IHYQ8onTWIk -->
             </div>
             <hr class="mt-3">
           </div>
@@ -244,7 +269,8 @@
                 <p class="mb-1 fs-5">4cm 加厚型側板設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>水平靠接安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
+                <!-- https://www.dropbox.com/scl/fi/cyhr4k8pzax5wh6q6l72c/4cm.avif?rlkey=uf7lunvz1rwwgwz506adjjq7z&dl=0 -->
               </div>
             </div>
 
@@ -263,7 +289,7 @@
                 <p class="mb-1 fs-5">易取型側板設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>水平靠接安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
               </div>
             </div>
             <hr class="mt-3">
@@ -356,6 +382,7 @@
           </div>
         </div>
       </div>
+
        
       <!-- 3要點 -->
       <div class="py-5">
