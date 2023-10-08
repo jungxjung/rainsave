@@ -1,5 +1,11 @@
 //document ready
 $(document).ready(function(){
+    const myCarouselElement = document.querySelector('#carouselknowledgeControls')
+
+    const carousel = new bootstrap.Carousel(myCarouselElement, {
+      interval: 10000,
+      touch: false
+})
 });
 //document ready end
 
