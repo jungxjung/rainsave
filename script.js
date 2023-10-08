@@ -166,7 +166,7 @@ const vm = Vue.createApp({
 vm.component('my-header', {
   template: `
   <nav class="navbar navbar-expand-md fixed-top top_1">
-    <div class="container-fluid"><a class="navbar-brand" href="/index.html"> <img class="d-inline-block align-text-top" src="/images/rainsave_brandicon.png" alt="Rain SAVE 儲集框架" width="60"/>
+    <div class="container-fluid"><a class="navbar-brand" href="/index.html"> <img class="d-inline-block align-text-top" src="/images/rainsave_icon.svg" alt="Rain SAVE 儲集框架" width="60"/>
         <div class="brand d-inline-block align-text-top"> 
           <h3 class="rainsave">Rain SAVE 儲集框架</h3><img class="company_name" src="/images/company_name+logo.png" alt="正在旺企業有限公司" width="180"/>
         </div></a>
