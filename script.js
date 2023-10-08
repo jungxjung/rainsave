@@ -43,7 +43,7 @@ const vm = Vue.createApp({
       address: '台北市北投區清江路247巷8號1樓',
       tel_number: '(02)2898-6207',
       fax_number: '(02)2898-6132',
-      email: 'rainmaster@rainmaster.com',
+      email: 'rainsave@rainsave.com.tw',
       message: '',
       //實績案例資料用V-for渲染(page08)
       infilcases: [
