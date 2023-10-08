@@ -150,6 +150,7 @@ ul.nav {
 
 .title_m {
   border-left: solid 3px #1E3E96;
+  margin-left: 10px;
   padding-left: 10px;
   font-weight: bold;
   color: #555;
@@ -271,8 +272,11 @@ ul.nav {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 1px solid;
+  margin-bottom: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .title_home.top_title {
   text-align: left;
@@ -349,7 +353,7 @@ ul.nav {
 .text.intro {
   margin-left: 0;
   margin-top: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .intro_bluebox {
