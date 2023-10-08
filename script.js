@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     const carousel = new bootstrap.Carousel(myCarouselElement, {
       interval: 10000,
-      touch: false
+      touch: true
 })
 });
 //document ready end
