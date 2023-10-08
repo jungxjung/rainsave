@@ -273,7 +273,7 @@ ul.nav {
   font-weight: bold;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   margin-top: 50px;
   margin-bottom: 18px;
   margin-left: 10px;
@@ -370,7 +370,7 @@ hr {
   align-items: center;
   padding: 5px 25px;
   background-color: #1E3E96;
-  z-index: 200;
+  z-index: 2;
 }
 .intro_bluebox .like {
   margin: 30px;
@@ -415,7 +415,7 @@ hr {
 }
 
 .case_mtb {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 /*首頁-知識分享*/
