@@ -1144,6 +1144,11 @@ ul.text_4 {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.company_intro_notbold{
+  font-size: 25px;
+  color: #1E3E96;
+  margin-bottom: 10px;
+}
 
 .company_intro_small {
   margin-bottom: 0px;
