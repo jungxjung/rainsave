@@ -274,6 +274,7 @@ ul.nav {
   text-align: center;
   padding-bottom: 10px;
   border-bottom: 1px solid;
+  margin-top: 50px;
   margin-bottom: 18px;
   margin-left: 10px;
   margin-right: 10px;
@@ -337,7 +338,12 @@ ul.nav {
 
 #rainsave_page00_intro {
   border-top: solid 2px #1E3E96;
-  border-bottom: solid 2px #1E3E96;
+}
+
+hr {
+  border-top: solid 2px #1E3E96;
+  opacity: 100;
+  z-index: 1;
 }
 
 .title_intro {
@@ -353,17 +359,17 @@ ul.nav {
 .text.intro {
   margin-left: 0;
   margin-top: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .intro_bluebox {
-  top: -100px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
   padding: 5px 25px;
   background-color: #1E3E96;
+  z-index: 200;
 }
 .intro_bluebox .like {
   margin: 30px;
