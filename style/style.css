@@ -343,6 +343,7 @@ ul.nav {
 hr {
   border-top: solid 2px #1E3E96;
   opacity: 100;
+  top: 45%;
   z-index: 1;
 }
 
