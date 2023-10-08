@@ -636,8 +636,6 @@ ol.fw-normal.roman {
 
 /*首頁-產品施作導覽*/
 #rainsave_page00_productfilm {
-  display: flex;
-  align-items: center;
   padding: 80px 0;
   background-color: #E5E5E5;
 }
