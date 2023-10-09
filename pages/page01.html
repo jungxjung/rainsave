@@ -131,7 +131,7 @@
               <p class="mb-1 fs-5"></p>
             </div> -->
             <div class="d-grid text-end p-0">
-              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>儲集框架主體 展示影片</button>
+              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#display1" onclick="openYTModal('#display1','1sesLta9IrI')"><i class="bi bi-youtube me-1"></i>儲集框架主體 展示影片</button>
               <!-- https://youtu.be/1sesLta9IrI -->
             </div>
             <hr class="mt-3">
@@ -170,7 +170,7 @@
                 <p class="mb-1 fs-5">反向安裝時的四點拼接定位設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>反向安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb2" onclick="openYTModal('#thumb2','i5ybD3bxvO0')"><i class="bi bi-youtube me-1"></i>反向安裝說明</button>
                 <!-- https://youtu.be/i5ybD3bxvO0 -->
               </div>
             </div>
@@ -190,7 +190,7 @@
                 <p class="mb-1 fs-5">一通到底型的大開口設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>一通到底說明影片</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb3" onclick="openYTModal('#thumb3','YBovj7dRYSM')"><i class="bi bi-youtube me-1"></i>一通到底說明影片</button>
               </div>
             </div>
 
@@ -209,8 +209,7 @@
                 <p class="mb-1 fs-5">垂直卡接時各支撐柱具有卡接功能</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>垂直卡接安裝說明</button>
-                <!-- https://youtu.be/w77_6zDNPEU -->
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb4" onclick="openYTModal('#thumb4','w77_6zDNPEU')"><i class="bi bi-youtube me-1"></i>垂直卡接安裝說明</button>
               </div>
             </div>
             <hr class="mt-3">
@@ -218,7 +217,26 @@
         </div>
       </div>
 
-      <!-- modal 1-4項 -->
+      <!-- modal 主影片 -->
+      <div class="modal fade" id="display1" tabindex="-1" aria-labelledby="display1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="display1Label">儲集框架主體 展示影片</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#display1','1sesLta9IrI')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#display1','1sesLta9IrI ')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 主影片 -->
+
+      <!-- modal 1/10項 -->
       <div class="modal fade" id="thumb1" tabindex="-1" aria-labelledby="thumb1Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
@@ -235,7 +253,64 @@
           </div>
         </div>
       </div>
-      <!--end modal 1-4項 -->
+      <!--end modal 1/10項 -->
+
+      <!-- modal 2/10 -->
+      <div class="modal fade" id="thumb2" tabindex="-1" aria-labelledby="thumb2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb2Label">水平靠接安裝說明</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#thumb2','i5ybD3bxvO0')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#thumb2','i5ybD3bxvO0')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 2/10 -->
+
+      <!-- modal 3/10 -->
+      <div class="modal fade" id="thumb3" tabindex="-1" aria-labelledby="thumb3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb3Label">一通到底說明影片</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#thumb3','YBovj7dRYSM')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#thumb3','YBovj7dRYSM')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 3/10 -->
+
+      <!-- modal 4/10 -->
+      <div class="modal fade" id="thumb4" tabindex="-1" aria-labelledby="thumb4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb4Label">垂直卡接安裝說明</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#thumb4','w77_6zDNPEU')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#thumb4','w77_6zDNPEU')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 4/10 -->
 
       <div class="row">
         <div class="col-md-6 col-lg-5 mx-auto text-center">
@@ -247,11 +322,11 @@
         </div>
         <div class="col-md-6 col-lg-5 mx-auto d-flex flex-column justify-content-center mt-5">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-7 text-center text-md-start">
-              <!-- <p class="mb-1 fs-5">儲集框架展示影片</p> -->
-            </div>
-            <div class="col-md-5 text-center text-md-end p-md-0">
-              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>儲集框架側板展示影片</button>
+            <!-- <div class="col-md-7 text-center text-md-start">
+              <p class="mb-1 fs-5">儲集框架展示影片</p>
+            </div> -->
+            <div class="d-grid text-center text-md-end p-md-0">
+              <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#display2" onclick="openYTModal('#display2','IHYQ8onTWIk')"><i class="bi bi-youtube me-1"></i>儲集框架側板展示影片</button>
               <!-- https://youtu.be/IHYQ8onTWIk -->
             </div>
             <hr class="mt-3">
@@ -269,7 +344,7 @@
                 <p class="mb-1 fs-5">4cm 加厚型側板設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb5"><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
                 <!-- https://www.dropbox.com/scl/fi/cyhr4k8pzax5wh6q6l72c/4cm.avif?rlkey=uf7lunvz1rwwgwz506adjjq7z&dl=0 -->
               </div>
             </div>
@@ -289,7 +364,7 @@
                 <p class="mb-1 fs-5">易取型側板設計</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb6"><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
                 <!-- https://www.dropbox.com/scl/fi/jy3es5pirphwetn5wlire/auwmt-v86fy.avif?rlkey=tp9ryit13896ebmjttpn185wv&dl=0 -->
               </div>
             </div>
@@ -297,6 +372,68 @@
           </div>
         </div>
       </div>
+
+      <!-- modal 側板影片 -->
+      <div class="modal fade" id="display2" tabindex="-1" aria-labelledby="display2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="display2Label">儲集框架側板展示影片</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#display2','IHYQ8onTWIk')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#display2','IHYQ8onTWIk')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 側板影片 -->
+
+      <!-- modal 5/10 -->
+      <div class="modal fade" id="thumb5" tabindex="-1" aria-labelledby="thumb5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb5Label">儲集框架側板</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <img class="img-fluid" src="/images/page01/modal/4cm.avif" alt="4 cm 側板">
+              </picture>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 5/10 -->
+
+      <!-- modal 6/10 -->
+      <div class="modal fade" id="thumb6" tabindex="-1" aria-labelledby="thumb6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb6Label">易取型側板</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <img class="img-fluid" src="/images/page01/modal/handle.avif" alt="易取型側板">
+              </picture>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 6/10 -->
+
       <div class="row mt-5">
         <div class="col-md-6 col-lg-5 mx-auto text-center">
           <picture>
@@ -319,7 +456,7 @@
                 <p class="mb-1 fs-5">側板自帶卡扣設計，安裝穩固不晃動</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>側板安裝說明</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb7" onclick="openYTModal('#thumb7','FWJAKQ1xSCI')"><i class="bi bi-youtube me-1"></i>側板安裝說明</button>
                 <!-- https://youtu.be/FWJAKQ1xSCI -->
               </div>
             </div>
@@ -338,7 +475,7 @@
                 <p class="mb-1 fs-5">側板肋條加勁，提升抗壓能力</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-youtube me-1"></i>詳細說明影片</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb8" onclick="openYTModal('#thumb8','gXdwJOjRPQE')"><i class="bi bi-youtube me-1"></i>詳細說明影片</button>
                 <!-- https://youtu.be/gXdwJOjRPQE -->
               </div>
             </div>
@@ -358,7 +495,7 @@
                 <p class="mb-1 fs-5">具有防呆設計，任意安裝皆能成功</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>防呆詳細說明影像</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb9"><i class="bi bi-image-fill me-1"></i>防呆詳細說明影像</button>
                 <!-- https://www.dropbox.com/scl/fi/qqs3z2oni5sezztf7o3p2/.avif?rlkey=wa6oyubranvxtjfhbliamvu3s&dl=0 -->
               </div>
             </div>
@@ -378,7 +515,7 @@
                 <p class="mb-1 fs-5">高達95%的儲集空間</p>
               </div>
               <div class="col-md-6 text-start text-md-end">
-                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
+                <button class="btn btn-outline-primary border-2 modal-video-btn" data-src="" data-bs-toggle="modal" data-bs-target="#thumb10"><i class="bi bi-image-fill me-1"></i>詳細說明影像</button>
                 <!-- https://www.dropbox.com/scl/fi/ppwlfpchdr5q6udya4txc/95.avif?rlkey=fhr25kr06ac3p7iv1ibwej0q2&dl=0 -->
               </div>
             </div>
@@ -387,6 +524,86 @@
           </div>
         </div>
       </div>
+
+      <!-- modal 7/10 -->
+      <div class="modal fade" id="thumb7" tabindex="-1" aria-labelledby="thumb7Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb7Label">側板安裝說明</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#thumb7','FWJAKQ1xSCI')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#thumb7','FWJAKQ1xSCI')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 7/10 -->
+
+      <!-- modal 8/10 -->
+      <div class="modal fade" id="thumb8" tabindex="-1" aria-labelledby="thumb8Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb8Label">側板安裝說明</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="stopYT('#thumb8','FWJAKQ1xSCI')"></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-yt-container ratio ratio-16x9"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal" onclick="stopYT('#thumb8','FWJAKQ1xSCI')">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 8/10 -->
+
+      <!-- modal 9/10 -->
+      <div class="modal fade" id="thumb9" tabindex="-1" aria-labelledby="thumb9Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb9Label">防呆設計</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <img class="img-fluid" src="/images/page01/modal/smart.avif" alt="防呆設計">
+              </picture>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 9/10 -->
+
+      <!-- modal 10/10 -->
+      <div class="modal fade" id="thumb10" tabindex="-1" aria-labelledby="thumb10Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="thumb10Label">95%儲集空間</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <img class="img-fluid" src="/images/page01/modal/95per.avif" alt="95%儲集空間">
+              </picture>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-primary border-2" data-bs-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal 10/10 -->
 
        
       <!-- 3要點 -->
@@ -660,7 +877,8 @@
   </div> 
   <!-- container end -->
 
-  <my-footer></my-footer>
+<my-footer></my-footer>
+
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
