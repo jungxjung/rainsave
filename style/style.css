@@ -235,30 +235,11 @@ ul.nav {
   right: 0;
   width: 25vw;
   list-style: none;
-  color: #1E3E96;
   font-weight: 700;
 }
-.feature_points li {
-  box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: -2px;
-  border: solid 2px #1E3E96;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #1E3E96;
-  font-size: 1.2rem;
-}
-.feature_points .ol_num {
-  padding: 2px 10px;
-  margin-right: 10px;
-  border-radius: 50%;
-  color: #FFF;
-  background-color: #1E3E96;
-}
+
+
 /*首頁-標頭標題*/
-.bluebox_title {
-  padding: 20px 50px;
-  background-color: #1E3E96;
-}
 .subtitle {
   color: #FFF;
 }
@@ -357,12 +338,10 @@ ul.nav {
 }
 
 .intro_bluebox {
-  left: 50%;
-  transform: translateX(-50%);
+
   display: flex;
   align-items: center;
   padding: 5px 25px;
-  background-color: #1E3E96;
   z-index: 2;
 }
 .intro_bluebox .like {
@@ -1156,7 +1135,7 @@ a.company_intro_small {
 
 
 #company_info1 {
-  border-top: solid 1.5px #1E3E96;
+  border-top: solid 2px #1E3E96;
 }
 
 .companydeco {

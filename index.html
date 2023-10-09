@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://rainsave.com.tw/images/homepage/caseimg_01.JPG" />
   <meta property="og:description" content="Rain SAVE 儲集框架 為一種塑膠射出成型製品其廣泛運用於地下儲集雨水及滲透保水等基地保水之工程使用，我司所生產之儲集框架產品具有精度高、易於安裝、抗壓強度高、質量輕盈等特性。產品採100%均質一級回收塑料並添加各式耐衝擊、抗紫外線、抗凍融等助劑製成。" />
   <link rel='stylesheet' href='./style/custom.min.css'>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
   <link rel="stylesheet" href="style/style.css">
   <script src="https://unpkg.com/vue@next"></script>
@@ -23,39 +23,41 @@
   <my-header></my-header>
 
 <section id="rainsave_page00_homeimg">
-  <div class="container p-0">
+  <div class="container">
     <div class="row">
-      <picture class="p-0">
+      <picture class="">
         <source srcset="/images/homepage/homepage_img.avif" type="image/avif" />
-        <img src="./images/homepage/homepage_img.png" alt="儲集框架儲水槽體"/>
+        <img class="img-fluid" src="./images/homepage/homepage_img.png" alt="儲集框架儲水槽體"/>
       </picture>
 
-      <ul class="feature_points p-0">
-        <li><span class="ol_num">1</span>儲集框架 95%儲水體積</li>
-        <li><span class="ol_num">2</span>4cm側板提升水平抗壓能力</li>
-        <li><span class="ol_num">3</span>連續性的柱狀支撐結構</li>
-        <li><span class="ol_num">4</span>多方向性的組裝方式</li>
-        <li><span class="ol_num">5</span>穩固的側板卡扣設計</li>
+      <ul class="list-group fs-5 text-primary feature_points bg-light bg-opacity-75">
+        <li class="p-2 border border-2 border-primary text-primary"><i class="bi bi-1-circle-fill fs-4 ms-1"></i>&nbsp;儲集框架 95%儲水體積</li>
+        <li class="p-2 border border-2 border-primary border-top-0 text-primary"><i class="bi bi-2-circle-fill fs-4 ms-1"></i>&nbsp;4cm側板提升水平抗壓能力</li>
+        <li class="p-2 border border-2 border-primary border-top-0 text-primary"><i class="bi bi-3-circle-fill fs-4 ms-1"></i>&nbsp;連續性的柱狀支撐結構</li>
+        <li class="p-2 border border-2 border-primary border-top-0 text-primary"><i class="bi bi-4-circle-fill fs-4 ms-1"></i>&nbsp;多方向性的組裝方式</li>
+        <li class="p-2 border border-2 border-primary border-top-0 text-primary"><i class="bi bi-5-circle-fill fs-4 ms-1"></i>&nbsp;穩固的側板卡扣設計</li>
       </ul>
     </div>
-    <div class="row bg-primary px-5 pb-2 mt-5">
-      <h1 class="title_home top_title mt-5">Rain SAVE 儲集框架 </h1>
-      <h4 class="subtitle">基地保水 · 雨水積磚 · 工廠直營 · 價格保證 · 品質保證</h4>
+    <div class="mt-5">
+      <div class="bg-primary pt-5 pb-2 px-5">
+        <h1 class="title_home top_title">Rain SAVE 儲集框架</h1>
+        <h4 class="subtitle">基地保水 · 雨水積磚 · 工廠直營 · 價格保證 · 品質保證</h4>
+      </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container mt-5">            
-    <div class="row justify-content-between">
-      <div class="sketchfab-embed-wrapper col-md-6 ps-md-0">
+    <div class="row">
+      <div class="sketchfab-embed-wrapper col-md-6">
         <iframe width="100%" height="500px" title="儲集框架主體-雨水管理大師" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/771e4a463b8b45eb93b1633b30725851/embed?camera=0"> </iframe> 
       </div>
-      <div class="sketchfab-embed-wrapper col-md-6 pe-md-0">
+      <div class="sketchfab-embed-wrapper col-md-6">
         <iframe width="100%" height="500px" title="儲集框架側板-雨水管理大師" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/55d9270651be47a8902569b96da6f287/embed?camera=0"> </iframe>
       </div>
     </div>
     <div class="row justify-content-between">
-      <div class="col-sm-6 ps-md-0">
+      <div class="col-sm-6">
         <h5 class="title_intro">Rain SAVE U 儲集框架主體：</h5>
         <p class="">此模型為兩個單元所組成的一個50*50*50cm之槽體。<br>Rain SAVE U 雨水積磚主體具有水平靠接、垂直卡接、反向拼接等安裝優勢，多方向性的組合邏輯可加快施工速度，一通到底的大開口設計，更可快速地收集雨水。</p>
       </div>
@@ -72,19 +74,17 @@
   </div>
 </section>
 <section id="rainsave_page00_intro"> 
-  <div class="container">
     <div class="row">
-      <div class="col-sm-12 p-md-0">
-        <p class="text intro mb-5 p-md-0">Rain SAVE 儲集框架 為一種塑膠射出成型製品，其廣泛運用於地下儲集雨水及滲透保水等基地保水之工程使用，我司所生產之儲集框架產品具有精度高、易於安裝、抗壓強度高、質量輕盈等特性。產品採100%均質一級回收塑料並添加各式耐衝擊、抗紫外線、抗凍融等助劑製成。</p>
+      <div class="col-sm-9 mx-auto p-md-0">
+        <p class="text intro mb-5">Rain SAVE 儲集框架 為一種塑膠射出成型製品，其廣泛運用於地下儲集雨水及滲透保水等基地保水之工程使用，我司所生產之儲集框架產品具有精度高、易於安裝、抗壓強度高、質量輕盈等特性。產品採100%均質一級回收塑料並添加各式耐衝擊、抗紫外線、抗凍融等助劑製成。</p>
       </div>
     </div>
-  </div>
 </section>
 
 <section>
 
   <div class="row">
-    <div class="col-sm-9 intro_bluebox justify-content-center">
+    <div class="col-sm-9 d-flex flex-column flex-md-row bg-primary mx-auto intro_bluebox justify-content-center">
       <svg class="like" width="150" height="150" viewbox="0 0 182 182" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_709_3590)">
           <path d="M149.77 81.2517C150.437 79.038 150.449 76.6786 149.806 74.4581C149.162 72.2376 147.889 70.2507 146.141 68.7373C144.394 67.2239 142.245 66.2486 139.955 65.929C137.666 65.6094 135.332 65.9592 133.237 66.9362L112.169 76.7764C111.298 69.47 108.264 60.6529 106.583 57.054L104.893 53.4358C103.097 49.6008 99.8521 46.6351 95.8716 45.1892C91.8912 43.7433 87.4997 43.9353 83.6605 45.723L80.0424 47.413C79.2356 47.7899 78.578 48.4256 78.174 49.2191C77.77 50.0126 77.6428 50.9184 77.8126 51.7925L79.5249 60.5982C81.9209 72.9309 78.8436 89.21 70.8035 95.6628C69.0572 94.0097 66.8544 92.9196 64.481 92.5339C62.1076 92.1482 59.673 92.4846 57.4931 93.4996L35.784 103.64C34.8244 104.088 34.0821 104.899 33.7205 105.894C33.3589 106.89 33.4076 107.988 33.8558 108.948L64.2756 174.075C64.7238 175.035 65.5349 175.777 66.5303 176.138C67.5258 176.5 68.6242 176.451 69.5838 176.003L91.2929 165.863C93.3436 164.905 95.0809 163.385 96.3035 161.48C97.5261 159.576 98.184 157.363 98.201 155.1L112.569 153.437C117.259 152.896 121.832 151.601 126.109 149.601L156.42 135.443C158.191 134.616 159.733 133.369 160.911 131.809C162.09 130.249 162.868 128.425 163.179 126.495C163.49 124.565 163.324 122.588 162.696 120.737C162.068 118.887 160.996 117.217 159.575 115.876C161.131 114.555 162.325 112.857 163.041 110.946C163.758 109.034 163.974 106.97 163.669 104.951C163.364 102.933 162.548 101.025 161.298 99.4102C160.049 97.7953 158.407 96.5266 156.53 95.7244C157.386 92.903 157.169 89.8649 155.921 87.1935C154.673 84.5222 152.483 82.4061 149.77 81.2517ZM89.8411 153.319C90.2893 154.278 90.338 155.377 89.9764 156.372C89.6147 157.368 88.8725 158.179 87.9129 158.627L69.822 167.077L42.7821 109.186L60.8731 100.736C61.8327 100.288 62.931 100.239 63.9265 100.601C64.922 100.962 65.733 101.705 66.1812 102.664L89.8411 153.319ZM136.14 92.0253L143.377 88.6453C144.336 88.1971 145.435 88.1484 146.43 88.51C147.426 88.8716 148.237 89.6139 148.685 90.5735C149.133 91.5331 149.182 92.6314 148.82 93.6269C148.459 94.6224 147.716 95.4334 146.757 95.8817L139.52 99.2616C138.561 99.7098 137.818 100.521 137.457 101.516C137.095 102.512 137.144 103.61 137.592 104.57C138.04 105.529 138.851 106.272 139.847 106.633C140.842 106.995 141.941 106.946 142.9 106.498L150.137 103.118C151.096 102.67 152.195 102.621 153.19 102.983C154.186 103.344 154.997 104.087 155.445 105.046C155.893 106.006 155.942 107.104 155.58 108.1C155.218 109.095 154.476 109.906 153.517 110.354L146.28 113.734C145.321 114.183 144.578 114.994 144.217 115.989C143.855 116.985 143.904 118.083 144.352 119.043C144.8 120.002 145.611 120.744 146.607 121.106C147.602 121.468 148.701 121.419 149.66 120.971C150.62 120.523 151.718 120.474 152.714 120.835C153.709 121.197 154.52 121.939 154.968 122.899C155.417 123.859 155.465 124.957 155.104 125.952C154.742 126.948 154 127.759 153.04 128.207L122.729 142.365C119.229 144.001 115.487 145.061 111.649 145.504L95.8595 147.331L74.9476 102.56C80.1197 98.8306 83.9961 92.6418 86.263 84.4163C88.4759 76.3835 88.8883 66.9116 87.3572 59.079L86.2469 53.3301L87.0405 52.9594C88.9597 52.063 91.1564 51.9656 93.1474 52.6889C95.1383 53.4121 96.7604 54.8966 97.6569 56.8158L99.3469 60.434C101.616 65.292 104.449 75.3198 104.446 80.384L97.0549 83.8361C96.0953 84.2843 95.3531 85.0953 94.9915 86.0908C94.6299 87.0863 94.6785 88.1846 95.1267 89.1442C95.5749 90.1038 96.386 90.8461 97.3815 91.2077C98.3769 91.5693 99.4753 91.5207 100.435 91.0724L136.617 74.1725C137.576 73.7243 138.675 73.6757 139.67 74.0373C140.666 74.3989 141.477 75.1411 141.925 76.1007C142.373 77.0603 142.422 78.1587 142.06 79.1542C141.699 80.1496 140.956 80.9607 139.997 81.4089L132.76 84.7889C131.801 85.2371 131.059 86.0482 130.697 87.0436C130.335 88.0391 130.384 89.1375 130.832 90.0971C131.28 91.0567 132.091 91.7989 133.087 92.1605C134.082 92.5221 135.181 92.4735 136.14 92.0253Z" fill="#F5CD1D"></path>
@@ -365,16 +365,16 @@
           <img class="w-75" src="./images/company_name+logo.png" alt="正在旺企業有限公司"/>
         </div>
         <div class="col-sm-4"> 
-          <p class="mb-2 fs-4 text-primary fw-bold">聯絡我們</p>
+          <p class="mb-2 fs-5 text-primary fw-bold">聯絡我們</p>
           <p class="company_intro_small fs-5 lh-sm">電話：{{ tel_number }}</p>
           <p class="company_intro_small fs-5 lh-sm">傳真：{{ fax_number }}</p>
           <p class="company_intro_small fs-5 lh-sm">地址：{{ address }}</p>
           <p class="company_intro_small fs-5 lh-sm">E-mail：{{ email }}</p>
         </div>
         <div class="col-sm-4">
-          <a class="fs-4 text-decoration-none fw-bold" href="https://www.facebook.com/rainmaster.tw" target="_blank">我們的社群&nbsp;<i class="bi bi-facebook"></i></a>
+          <a class="fs-5 text-decoration-none fw-bold" href="https://www.facebook.com/rainmaster.tw" target="_blank">我們的社群&nbsp;<i class="bi bi-facebook"></i></a>
           <br>
-          <a class="fs-4 text-decoration-none fw-bold" href="https://www.youtube.com/channel/UCfrM6xyJ74HVgmu4kqDTdWQ/featured" target="_blank">我們的頻道&nbsp;<i class="bi bi-youtube"></i></a>
+          <a class="fs-5 text-decoration-none fw-bold" href="https://www.youtube.com/channel/UCfrM6xyJ74HVgmu4kqDTdWQ/featured" target="_blank">我們的頻道&nbsp;<i class="bi bi-youtube"></i></a>
           <div class="d-flex align-items-center flex-wrap">
             <div class="lab_logo"> 
               <img src="./images/footer_labicon/UL.png" alt="" class="lablogo">
