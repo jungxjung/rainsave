@@ -150,7 +150,6 @@ ul.nav {
 
 .title_m {
   border-left: solid 3px #1E3E96;
-  margin-left: 10px;
   padding-left: 10px;
   font-weight: bold;
   color: #555;
@@ -230,13 +229,10 @@ ul.nav {
   margin-top: 50px;
 }
 
-.homeimg {
-  width: 80%;
-}
 .feature_points {
   position: absolute;
   bottom: 20%;
-  right: 5%;
+  right: 0;
   width: 25vw;
   list-style: none;
   color: #1E3E96;
@@ -274,15 +270,9 @@ ul.nav {
   text-align: center;
   padding-bottom: 10px;
   border-bottom: 2px solid;
-  margin-top: 50px;
   margin-bottom: 18px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
-.title_home.dowlan{
-  margin-top: 40px;
-}
 .title_home.top_title {
   text-align: left;
   color: #FFF;
@@ -364,7 +354,6 @@ ul.nav {
 .text.intro {
   margin-left: 0;
   margin-top: 20px;
-  margin-bottom: 50px;
 }
 
 .intro_bluebox {
@@ -394,7 +383,6 @@ ul.nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
 }
 
 .casepics {
@@ -1144,26 +1132,16 @@ ul.text_4 {
   font-weight: 700;
   margin-bottom: 10px;
 }
-.company_intro_notbold{
-  font-size: 25px;
-  color: #1E3E96;
-  margin-bottom: 10px;
-}
 
 .company_intro_small {
   margin-bottom: 0px;
   color: #1E3E96;
   /* font-size: 1.2rem; */
 }
-.company_intro_small i {
-  top: -10px;
-  color: #1E3E96;
-  font-size: 1.8rem;
-}
 
 a.company_intro_small {
-  height: 35px;
-  margin-left: 10px;
+
+
   text-decoration: none;
 }
 
@@ -1177,7 +1155,7 @@ a.company_intro_small {
 }
 
 
-#company_deco, #company_info1 {
+#company_info1 {
   border-top: solid 1.5px #1E3E96;
 }
 
@@ -1193,14 +1171,8 @@ a.company_intro_small {
   padding: 0px 10px;
   background-color: #FFF;
 }
-.companydeco .copyright {
-  font-size: 0.75rem;
-}
 
-#company_info {
-  margin-top: 40px;
-  background-color: #1E3E96;
-}
+
 #company_info .infoboxes {
   text-align: center;
 }
