@@ -1,11 +1,19 @@
 //document ready
 $(document).ready(function(){
-    const myCarouselElement = document.querySelector('#carouselknowledgeControls')
 
+    //homepage carousel automatic turning page time  
+    const myCarouselElement = document.querySelector('#carouselknowledgeControls')
     const carousel = new bootstrap.Carousel(myCarouselElement, {
       interval: 10000,
       touch: true
-})
+    })
+
+    //footer responsive border
+    var screenWidth = screen.width;
+    var footerContactBox = document.getElementById("footerContactBox");
+    if (screenWidth < 576) {
+      footerContactBox.classList.remove("border-end");
+    }
 });
 //document ready end
 
@@ -52,28 +60,24 @@ const vm = Vue.createApp({
           title: '士林北藝中心',
           intro: '此案位於捷運劍潭站旁，係為公共工程案。總計施作153m³，上方覆土約25~45cm，為基地保水滲透型。',
           case_href: './page-cases/case01.html',
-
         },
         {
           picture_src: '/images/homepage/caseimg_02.JPG',
           title: '台北市日新國小',
           intro: '此案位於捷運台北車站旁，係為公共工程案。總計施作230m³，上方覆土約30~40cm，為基地保水滲透型。',
           case_href: './page-cases/case02.html',
-
         },
         {
           picture_src: '/images/homepage/caseimg_03.JPG',
           title: '龜山區市地重劃',
           intro: '此案位於桃園市龜山區，係為公共工程案。總計施作86m³，上方覆土約40~60cm，為基地保水滲透型。',
           case_href: './page-cases/case03.html',
-
         },
         {
           picture_src: '/images/homepage/caseimg_04.jpg',
           title: '高雄經濟部金屬中心',
           intro: '此案位於高雄楠梓，為張瑪龍建築師事務所設計。為公共工程，總計施作52.5m³，上方覆土約30~50cm，為基地保水滲透型。', 
           case_href: './page-cases/case04.html',
-
         },
       ],
       savecases: [
@@ -216,45 +220,51 @@ vm.component('my-header', {
 vm.component('my-footer', {
   template: `<footer id="company_info1">
   <div class="container mt-5">
-    <div class="row g-3">
-        <div class="col-sm-12 col-lg-4 p-0 mt-0"> 
-          <img width="300" src="/images/company_name+logo.png" alt="正在旺企業有限公司"/>
+    <div class="row g-0">
+      <div class="col-lg-6 d-flex flex-wrap align-items-center g-3">
+        <div class="pe-4">
+          <img src="/images/footer_labicon/UL.png" height='60'>
         </div>
-        <div class="col-sm-6 col-lg-4"> 
-          <p class="mb-2 fs-5 text-primary fw-bold">聯絡我們</p>
-          <p class="company_intro_small fs-5 lh-sm">電話：{{ tel_number }}</p>
-          <p class="company_intro_small fs-5 lh-sm">傳真：{{ fax_number }}</p>
-          <p class="company_intro_small fs-5 lh-sm">地址：{{ address }}</p>
-          <p class="company_intro_small fs-5 lh-sm">E-mail：{{ email }}</p>
+        <div class="pe-4">
+          <img src="/images/footer_labicon/TAF.png" alt="" height="60">
         </div>
-        <div class="col-sm-6 col-lg-4">
-          <p class="mt-2">
-            <a class="fs-5 text-decoration-none fw-bold" href="https://www.facebook.com/rainmaster.tw" target="_blank">我們的社群&nbsp;<i class="bi bi-facebook"></i></a>
-          </p>
-          <p class="mt-2">
-            <a class="fs-5 text-decoration-none fw-bold" href="https://www.youtube.com/channel/UCfrM6xyJ74HVgmu4kqDTdWQ/featured" target="_blank">我們的頻道&nbsp;<i class="bi bi-youtube"></i></a>
-          </p>
-          <div class="row d-flex align-items-end"  >
-            <div class="col">
-              <img src="/images/footer_labicon/UL.png" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-              <img src="/images/footer_labicon/TAF.png" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-              <img src="/images/footer_labicon/ZT.jpg" alt="" class="img-fluid" >
-            </div>
-            <div class="col">
-              <img src="/images/footer_labicon/TTT.png" alt="" class="img-fluid" >
-            </div>
-            <div class="col">
-              <img src="/images/footer_labicon/SGS.jpg" alt="" class="img-fluid" >
+        <div class="pe-4">
+          <img src="/images/footer_labicon/ZT.jpg" alt="" height="60">
+        </div>
+        <div class="pe-4">
+          <img src="/images/footer_labicon/TTT.png" alt="" height="60">
+        </div>
+        <div class="">
+          <img src="/images/footer_labicon/SGS.jpg" alt="" height="60">
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="row g-0">
+          <div id="footerContactBox" class="col-sm-7 border-end border-primary border-5 mt-5 mt-lg-0 pe-sm-3">
+            <p class="mb-2 fs-5 text-primary fw-bold">正在旺企業有限公司</p>
+            <p class="company_intro_small fs-5 lh-sm">電話：{{ tel_number }}</p>
+            <p class="company_intro_small fs-5 lh-sm">傳真：{{ fax_number }}</p>
+            <p class="company_intro_small fs-5 lh-sm">地址：{{ address }}</p>
+            <p class="company_intro_small fs-5 lh-sm text-break">E-mail：{{ email }}</p>
+          </div>
+          <div class="col-sm-5 d-flex mt-5 mt-lg-0">
+            <div class="align-self-center ps-sm-3">
+              <p class="">
+                <a class="fs-5 text-decoration-none fw-bold" href="https://www.facebook.com/rainmaster.tw" target="_blank">我們的社群&nbsp;<i class="bi bi-facebook"></i></a>
+              </p>
+              <p class="mt-2">
+                <a class="fs-5 text-decoration-none fw-bold" href="https://www.youtube.com/channel/UCfrM6xyJ74HVgmu4kqDTdWQ/featured" target="_blank">我們的頻道&nbsp;<i class="bi bi-youtube"></i></a>
+              </p>
             </div>
           </div>
         </div>
-
-
+      </div>
     </div>
+  </div>
+  <div class="mt-5 text-center position-relative">
+    <img width="300" class="mx-auto position-absolute top-50 start-50 translate-middle z-2 bg-light p-2" src="/images/正在旺LOGO.png" alt="正在旺企業有限公司">
+    <hr class="bg-primary border-0 opacity-100" style="height:2px;">
+    <p class="text-nowrap m-0 text-primary text-center fs-6 fw-light position-absolute top-100 start-50 translate-middle" style="padding-top: 65px;">© 2022 正在旺企業-{{ message }}. All Rights Reserved.</p> 
   </div>
   <div class="bg-primary mt-5">
     <div class="row infoboxes">
@@ -266,7 +276,6 @@ vm.component('my-footer', {
         <a class="info2" href="/pages/page08.html">實績案例</a>
       </div>
     </div>
-    <p class="pb-2 m-0 text-white-50 text-center fs-6 fw-light">© 2022 正在旺企業-{{ message }}. All Rights Reserved.</p> 
   </div>
 </footer>`,
   data () {
