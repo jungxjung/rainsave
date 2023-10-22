@@ -56,25 +56,29 @@ const vm = Vue.createApp({
       //實績案例資料用V-for渲染(page08)
       infilcases: [
         {
-          picture_src: '/images/homepage/caseimg_01.JPG',
+          picture_avif_src:'/images/homepage/case/caseInfiltrate_shilin.avif',
+          picture_src: '/images/homepage/case/caseInfiltrate_shilin.jpg',
           title: '士林北藝中心',
           intro: '此案位於捷運劍潭站旁，係為公共工程案。總計施作153m³，上方覆土約25~45cm，為基地保水滲透型。',
           case_href: './page-cases/case01.html',
         },
         {
-          picture_src: '/images/homepage/caseimg_02.JPG',
+          picture_avif_src:'/images/homepage/case/caseInfiltrate_rixin.avif',
+          picture_src: '/images/homepage/case/caseInfiltrate_rixin.jpg',
           title: '台北市日新國小',
           intro: '此案位於捷運台北車站旁，係為公共工程案。總計施作230m³，上方覆土約30~40cm，為基地保水滲透型。',
           case_href: './page-cases/case02.html',
         },
         {
-          picture_src: '/images/homepage/caseimg_03.JPG',
+          picture_avif_src:'/images/homepage/case/caseInfiltrate_guishan.avif',
+          picture_src: '/images/homepage/case/caseInfiltrate_guisan.jpg',
           title: '龜山區市地重劃',
           intro: '此案位於桃園市龜山區，係為公共工程案。總計施作86m³，上方覆土約40~60cm，為基地保水滲透型。',
           case_href: './page-cases/case03.html',
         },
         {
-          picture_src: '/images/homepage/caseimg_04.jpg',
+          picture_avif_src:'/images/homepage/case/caseInfiltrate_econ.avif',
+          picture_src: '/images/homepage/case/caseInfiltrate_econ.jpg',
           title: '高雄經濟部金屬中心',
           intro: '此案位於高雄楠梓，為張瑪龍建築師事務所設計。為公共工程，總計施作52.5m³，上方覆土約30~50cm，為基地保水滲透型。', 
           case_href: './page-cases/case04.html',
@@ -82,28 +86,32 @@ const vm = Vue.createApp({
       ],
       savecases: [
         {
-          picture_src: '/images/homepage/caseimg_08.jpg',
+          picture_avif_src:'/images/homepage/case/caseSave_nantou.avif',
+          picture_src: '/images/homepage/case/caseSave_nantou.jpg',
           title: '南投貓羅溪',
           intro: '此案位於南投921地震紀念公園旁，係為公共工程案。總計施作100m³，上方覆土約45~60cm，為儲水再利用型。',
           case_href: './page-cases/case08.html',
 
         },
         {
-          picture_src: '/images/homepage/caseimg_05.jpg',
+          picture_avif_src:'/images/homepage/case/caseSave_oceanU.avif',
+          picture_src: '/images/homepage/case/caseSave_oceanU.jpg',
           title: '基隆海洋大學',
           intro: '此案位於國立臺灣海洋大學內，係為公共工程案。總計施作50m³，上方覆土約45~55cm，為儲水型(雨水主要提供各棟大樓廁所使用)。',
           case_href: './page-cases/case05.html',
 
         },
         {
-          picture_src: '/images/homepage/caseimg_06.jpg',
+          picture_avif_src:'/images/homepage/case/caseSave_keelung.avif',
+          picture_src: '/images/homepage/case/caseSave_keelung.jpg',
           title: '基隆海科典藏館',
           intro: '此案位於國立海洋科技博物館，係為公共工程案。總計施作75m³，上方覆土約45~115cm，為儲水型(為提供下方大客車停車場廁所使用)。',
           case_href: './page-cases/case06.html',
 
         },
         {
-          picture_src: '/images/homepage/caseimg_07.jpg',
+          picture_avif_src:'/images/homepage/case/caseSave_xiangshan.avif',
+          picture_src: '/images/homepage/case/caseSave_xiangshan.jpg',
           title: '象山中強公園',
           intro: '此案位於捷運象山站旁，係為公共工程案。總計施作252m³，上方覆土約50~55cm，為儲水再利用型。',
           case_href: './page-cases/case07.html',
