@@ -658,10 +658,6 @@ ol.fw-normal.roman {
 }
 
 /*產品特點與安裝-安裝教學*/
-/* .assbl_film {
-  margin-bottom: 100px;
-} */
-
 
 /*產品大樣_主體&側板*/
 .size_info {
@@ -678,6 +674,7 @@ ol.fw-normal.roman {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .float {
   position: relative;
   top: -10px;
@@ -733,7 +730,6 @@ ol.fw-normal.roman {
   color: #1E3E96;
   font-size: 0.8rem;
 }
-
 .title_m_3 {
   margin-top: 50px;
   padding-bottom: 10px;
@@ -741,6 +737,7 @@ ol.fw-normal.roman {
   border-bottom: solid 1.5px #1E3E96;
   font-weight: 700;
 }
+
 /*滲透VS儲水-相關影片*/
 .filmplace {
   margin: 5px;
@@ -764,7 +761,6 @@ label {
   margin: 10px 0;
   padding-bottom: 10px;
 }
-
 input {
   width: 100px;
   margin-right: 5px;
@@ -917,10 +913,7 @@ th {
   font-weight: 700;
   font-size: 1.2rem;
 }
-/*需求計算-CAD圖*/
-.cad {
-  width: 100%;
-}
+
 
 /*使用須知-上半部*/ 
 .warning_1, .warning_2 {
@@ -1100,7 +1093,6 @@ ul.text_4 {
   padding: 20px 0 30px 0;
 }
 
-
 .company_intro_bold {
   font-size: 25px;
   color: #1E3E96;
@@ -1115,8 +1107,6 @@ ul.text_4 {
 }
 
 a.company_intro_small {
-
-
   text-decoration: none;
 }
 

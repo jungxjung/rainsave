@@ -14,6 +14,16 @@ $(document).ready(function(){
     if (screenWidth < 576) {
       footerContactBox.classList.remove("border-end");
     }
+
+    //animation
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('thumb_animation_homepage'),
+      path: '/images/animation/thumb_animation_homepage.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "Demo Animation",
+  }); 
 });
 //document ready end
 
