@@ -15,26 +15,39 @@ $(document).ready(function(){
       footerContactBox.classList.remove("border-end");
     }
 
-    //animation
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById('thumb_animation_homepage'),
-      path: '/images/animation/thumb_animation_homepage.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: "thumb animation",
-    }); 
 
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById('yellowthumb01'),
-      path: '/images/animation/thumb_animation.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: "yellow thumb Animation",
-    }); 
 });
 //document ready end
+
+function thumb_ani_home(){
+  bodymovin.loadAnimation({
+    container: document.getElementById('thumb_ani_home'),
+    path: '/images/animation/thumb_animation_homepage.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    name: "thumb animation",
+  });
+}
+
+function thumb_ani(){
+  bodymovin.loadAnimation({
+    container: document.getElementById('yellowthumb01'),
+    path: '/images/animation/thumb_animation.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    name: "yellow thumb Animation",
+  }); 
+  bodymovin.loadAnimation({
+    container: document.getElementById('yellowthumb02'),
+    path: '/images/animation/thumb_animation.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    name: "yellow thumb Animation",
+  }); 
+}
 
 
 //打開modal時，同時帶入相對應的yt連結，modalID為將打開的modal ID, link為應帶入的yt影片ID
