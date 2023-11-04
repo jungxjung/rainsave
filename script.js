@@ -22,8 +22,17 @@ $(document).ready(function(){
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      name: "Demo Animation",
-  }); 
+      name: "thumb animation",
+    }); 
+
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('yellowthumb01'),
+      path: '/images/animation/thumb_animation.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "yellow thumb Animation",
+    }); 
 });
 //document ready end
 
