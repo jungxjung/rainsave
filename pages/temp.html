@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
- <div id="anime"></div>
+ <div id="anime" style="width: 200px; height: 200px;"></div>
+ 
  <script>
     var animation = bodymovin.loadAnimation({
         container: document.getElementById('anime'),
-        path: '/images/page01/animation/360pointer.json',
+        path: '/images/animation/thumb_animation.json',
         renderer: 'svg',
         loop: true,
         autoplay: true,
