@@ -912,6 +912,16 @@ th {
   font-size: 1.2rem;
 }
 
+/* 下載img-blur */
+.img-blur{
+  transition: 0.3s;
+}
+
+.img-blur:hover {
+  -webkit-filter: blur(2px) grayscale(50%);
+	filter: blur(2px) grayscale(50%);
+}
+
 
 /*使用須知-上半部*/ 
 .warning_1, .warning_2 {
