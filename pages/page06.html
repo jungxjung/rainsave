@@ -221,18 +221,83 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12">
-        <h5 class="title_m mt-2">浮力問題</h5>
+
+      <div>
+        <h5 class="title_m mt-5">浮力問題</h5>
       </div>
-      <div class="row mt-3" style="margin-left: 5px;">
-        <div class="col-md-4"><p class="tag tag_2">浮力問題發生前：完工第二天僅側向部分回填</p><img class="situation" src="/images/page06/floating_01.JPG" alt=""></div>
-        <div class="col-md-4"><p class="tag tag_2">浮力問題發生中：施作儲水型式因連日大雨蓄水造成浮力</p><img class="situation" src="/images/page06/floating_02.JPG" alt=""></div>
-        <div class="col-md-4"><p class="tag tag_2">浮力發生主因：完工遇大雨且儲水槽體表面未覆土施壓</p><img class="situation" src="/images/page06/floating_03.jpg" alt=""></div>
-      </div>
-      <div class="row mt-3" style="margin-left: 5px;">
-        <div class="col-md-4"><p class="tag tag_2">浮力問題發生後：中間回正但四周浮起又受側向土壤擠壓</p><img class="situation" src="/images/page06/floating_04.jpg" alt=""></div>
-        <div class="col-md-4"><p class="tag tag_2">後續處理：抽水</p><img class="situation" src="/images/page06/floating_05.JPG" alt=""></div>
-        <div class="col-md-4"><p class="tag tag_2">後續處理：側邊開挖</p><img class="situation" src="/images/page06/floating_06.JPG" alt=""></div>
+
+      <!-- modal -->
+      <div>
+        <div class="mt-5">
+          <a class="modal-video-btn" data-src="" type="button" data-target="#float" onclick="openYTModal('#float','UVFt2Sy9zkY')">
+            <div class="position-relative">
+              <picture>
+                <source srcset="/images/page06/float_video_thumbnail.avif" type="image/avif" />
+                <img class="w-100" src="/images/page06/float_video_thumbnail.png" alt="浮力問題">
+              </picture>
+              <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
+            </div>
+          </a>
+        </div>
+
+        <div class="modal fade" id="float" tabindex="-1" role="dialog" aria-labelledby="floatL" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="floatL">失敗案例 - 浮力問題</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#float', 'UVFt2Sy9zkY')">
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="ratio ratio-16x9 modal-yt-container"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#float', 'UVFt2Sy9zkY')">關閉</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- modal-end -->
+      <div class="row g-2 g-md-4 mt-5">
+        <div class="col-md-6 col-lg-4">
+          <div>
+            <p class="d-inline-block bg-primary text-white px-3 py-1 position-absolute top-0 start-0 mt-4 z-1">施工完成</p>
+            <picture>
+              <source srcset="/images/page06/float01.avif" type="image/avif">
+              <img class="situation" src="/images/page06/float01.png" alt="施工完成">
+            </picture>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div>
+            <p class="d-inline-block bg-primary text-white px-3 py-1 position-absolute top-0 start-0 mt-4 z-1">錯誤: 施工完成後僅回填側邊</p>
+            <p class="d-inline-block bg-primary text-white px-3 py-1 position-absolute bottom-0 end-0 mb-4 z-1">浮力問題發生前</p>
+            <picture>
+              <source srcset="/images/page06/float02.avif" type="image/avif">
+              <img class="situation" src="/images/page06/float02.png" alt="施工完成後僅回填側邊">
+            </picture>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div>
+
+          </div>
+          <p class="tag tag_2">浮力發生主因：完工遇大雨且儲水槽體表面未覆土施壓</p>
+          <img class="situation" src="/images/page06/floating_03.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <p class="tag tag_2">浮力問題發生後：中間回正但四周浮起又受側向土壤擠壓</p>
+          <img class="situation" src="/images/page06/floating_04.jpg" alt="">
+        </div>
+        <div class="col-md-4">
+          <p class="tag tag_2">後續處理：抽水</p>
+          <img class="situation" src="/images/page06/floating_05.JPG" alt="">
+        </div>
+        <div class="col-md-4">
+          <p class="tag tag_2">後續處理：側邊開挖</p>
+          <img class="situation" src="/images/page06/floating_06.JPG" alt="">
+        </div>
       </div>
       <div class="row space_blank"></div>
     </div>
