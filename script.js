@@ -258,7 +258,7 @@ vm.component('my-header', {
 })
 
 vm.component('my-footer', {
-  template: `<footer id="company_info1">
+  template: `<footer id="company_info1" class="mt-5">
   <div class="container mt-5">
     <div class="row g-0">
       <div class="col-lg-6 d-flex flex-wrap align-items-center g-3">
