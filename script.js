@@ -89,21 +89,21 @@ const vm = Vue.createApp({
       infilcases: [
         {
           picture_avif_src:'/images/homepage/case/caseInfiltrate_shilin.avif',
-          picture_src: '/images/homepage/case/caseInfiltrate_shilin.jpg',
+          picture_src: '/images/homepage/case/caseInfiltrate_shilin.png',
           title: '士林北藝中心',
           intro: '此案位於捷運劍潭站旁，係為公共工程案。總計施作153m³，上方覆土約25~45cm，為基地保水滲透型。',
           case_href: './page-cases/case01.html',
         },
         {
           picture_avif_src:'/images/homepage/case/caseInfiltrate_rixin.avif',
-          picture_src: '/images/homepage/case/caseInfiltrate_rixin.jpg',
+          picture_src: '/images/homepage/case/caseInfiltrate_rixin.png',
           title: '台北市日新國小',
           intro: '此案位於捷運台北車站旁，係為公共工程案。總計施作230m³，上方覆土約30~40cm，為基地保水滲透型。',
           case_href: './page-cases/case02.html',
         },
         {
           picture_avif_src:'/images/homepage/case/caseInfiltrate_guishan.avif',
-          picture_src: '/images/homepage/case/caseInfiltrate_guisan.jpg',
+          picture_src: '/images/homepage/case/caseInfiltrate_guishan.png',
           title: '龜山區市地重劃',
           intro: '此案位於桃園市龜山區，係為公共工程案。總計施作86m³，上方覆土約40~60cm，為基地保水滲透型。',
           case_href: './page-cases/case03.html',
