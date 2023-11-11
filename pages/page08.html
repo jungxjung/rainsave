@@ -25,8 +25,72 @@
     <h1 class="title">Rain SAVE 實績案例</h1>
     <div class="row wholecontent">
       
-      <h4 class="title_m_3">滲透型</h4>
-     
+      <h5 class="title_m">滲透型</h5>
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <div class="">
+            <a class="modal-video-btn" data-src="" type="button" data-target="#infilV" onclick="openYTModal('#infilV','lfrw9cdM9Ng')">
+              <div class="position-relative">
+                <picture>
+                  <source srcset="/images/page08/infil_video_thumbnail.avif" type="image/avif" />
+                  <img class="w-100" src="/images/page08/infil_video_thumbnail.png" alt="雨水積磚 滲透型">
+                </picture>
+                <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
+              </div>
+            </a>
+          </div>
+  
+          <div class="modal fade" id="infilV" tabindex="-1" role="dialog" aria-labelledby="infilVL" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="infilVL">雨水積磚 滲透型</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#infilV', 'lfrw9cdM9Ng')">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="ratio ratio-16x9 modal-yt-container"></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#infilV', 'lfrw9cdM9Ng')">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <div class="">
+            <a class="modal-video-btn" data-src="" type="button" data-target="#rixinV" onclick="openYTModal('#rixinV','nKbi2DxWpVM')">
+              <div class="position-relative">
+                <picture>
+                  <source srcset="/images/page08/rixin_video_thumbnail.avif" type="image/avif" />
+                  <img class="w-100" src="/images/page08/rixin_video_thumbnail.png" alt="滲透型案例 - 日新國中">
+                </picture>
+                <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
+              </div>
+            </a>
+          </div>
+  
+          <div class="modal fade" id="rixinV" tabindex="-1" role="dialog" aria-labelledby="rixinVL" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="rixinVL">滲透型案例 - 日新國中</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#rixinV', 'nKbi2DxWpVM')">
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="ratio ratio-16x9 modal-yt-container"></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#rixinV', 'nKbi2DxWpVM')">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="title_m mt-5">滲透型案例</h5>
       <div class="col-md-6 p-2" v-for="item in infilcases">
         <div class="row m-1">
           <div class="col-sm-6">
