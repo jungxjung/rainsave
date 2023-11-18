@@ -218,7 +218,8 @@ vm.component('my-header', {
   <nav class="navbar navbar-expand-md fixed-top top_1">
     <div class="container-fluid"><a class="navbar-brand" href="/index.html"> <img class="d-inline-block align-text-top" src="/images/rainsave_icon.svg" alt="Rain SAVE 儲集框架" width="60"/>
         <div class="brand d-inline-block align-text-top"> 
-          <h3 class="rainsave">Rain SAVE 儲集框架</h3><img class="company_name" src="/images/company_name+logo.png" alt="正在旺企業有限公司" width="180"/>
+          <h3 class="rainsave">Rain SAVE 儲集框架</h3>
+          <img class="company_name" src="/images/正在旺LOGO.png" alt="正在旺企業有限公司" width="180"/>
         </div></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-telegram"> </i></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
