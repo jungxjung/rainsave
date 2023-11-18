@@ -49,6 +49,23 @@ function thumb_ani(){
   }); 
 }
 
+function loadYT(frameID, link){
+  var oldAnchor = document.querySelector(frameID + ' a');
+  if (oldAnchor) {
+    oldAnchor.remove();
+  }
+  
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/' + link;
+  iframe.allowFullscreen = true;
+  iframe.classList.add('shadow');
+  document.querySelector(frameID).classList.add('ratio');
+  document.querySelector(frameID).classList.add('ratio-16x9');
+
+  console.log(document.querySelector(frameID));
+  document.querySelector(frameID).append(iframe);
+}
+
 
 //打開modal時，同時帶入相對應的yt連結，modalID為將打開的modal ID, link為應帶入的yt影片ID
 function openYTModal(modalID, link){
