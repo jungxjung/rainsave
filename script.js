@@ -263,19 +263,34 @@ vm.component('my-footer', {
     <div class="row g-0">
       <div class="col-lg-6 d-flex flex-wrap align-items-center g-3">
         <div class="pe-4">
-          <img src="/images/footer_labicon/UL.png" height='60'>
+          <picture>
+            <source srcset="/images/footer_labicon/UL.avif" type="image/avif" />
+            <img src="/images/footer_labicon/UL.png" height='60'>
+          </picture>
         </div>
         <div class="pe-4">
-          <img src="/images/footer_labicon/TAF.png" alt="" height="60">
+          <picture>
+            <source srcset="/images/footer_labicon/TAF.avif" type="image/avif" />
+            <img src="/images/footer_labicon/TAF.png" height='60'>
+          </picture>
         </div>
         <div class="pe-4">
-          <img src="/images/footer_labicon/ZT.jpg" alt="" height="60">
+          <picture>
+            <source srcset="/images/footer_labicon/zt.avif" type="image/avif" />
+            <img src="/images/footer_labicon/ZT.jpg" height='60'>
+          </picture>
         </div>
         <div class="pe-4">
-          <img src="/images/footer_labicon/TTT.png" alt="" height="60">
+          <picture>
+            <source srcset="/images/footer_labicon/ttt.avif" type="image/avif" />
+            <img src="/images/footer_labicon/TTT.png" height='60'>
+          </picture>
         </div>
         <div class="">
-          <img src="/images/footer_labicon/SGS.jpg" alt="" height="60">
+          <picture>
+            <source srcset="/images/footer_labicon/SGS.avif" type="image/avif" />
+            <img src="/images/footer_labicon/SGS.jpg" height='60'>
+          </picture>
         </div>
       </div>
       <div class="col-sm-12 col-lg-6">
