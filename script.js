@@ -1,6 +1,11 @@
 //document ready
 $(document).ready(function(){
 
+  console.log(document.querySelector('body'));
+
+  document.querySelector("body").classList.add('bg-light');
+
+
     //homepage carousel automatic turning page time  
     const myCarouselElement = document.querySelector('#carouselknowledgeControls')
     const carousel = new bootstrap.Carousel(myCarouselElement, {
@@ -54,15 +59,13 @@ function loadYT(frameID, link){
   if (oldAnchor) {
     oldAnchor.remove();
   }
-  
+
   var iframe = document.createElement('iframe');
   iframe.src = 'https://www.youtube.com/embed/' + link;
   iframe.allowFullscreen = true;
   iframe.classList.add('shadow');
   document.querySelector(frameID).classList.add('ratio');
   document.querySelector(frameID).classList.add('ratio-16x9');
-
-  console.log(document.querySelector(frameID));
   document.querySelector(frameID).append(iframe);
 }
 
