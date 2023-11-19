@@ -54,6 +54,19 @@ function thumb_ani(){
   }); 
 }
 
+function downloadIMG(){
+  for(let i=1; i<=11; i++){
+    bodymovin.loadAnimation({
+      container: document.getElementById('downloadIMG'+ i),
+      path: '/images/animation/download.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "download animation",
+    });
+  }
+}
+
 function loadYT(frameID, link){
   var oldAnchor = document.querySelector(frameID + ' a');
   if (oldAnchor) {
