@@ -87,9 +87,6 @@ html, body {
   margin: 3px;
 }
 
-.top_2 {
-  z-index: 3;
-}
 
 ul.nav {
   margin-top: 70px;
@@ -102,7 +99,7 @@ ul.nav {
   padding-top: 18px;
   border-radius: 0 0 8px 8px;
   color: #555;
-  background-color: #E5E5E5;
+  /* background-color: #E5E5E5; */
   transition: 0.3s;
 }
 .nav-link:hover {
@@ -110,7 +107,6 @@ ul.nav {
 }
 
 .nav_hide {
-  top: 80px;
   z-index: 3;
   background-color: #FFF;
 }

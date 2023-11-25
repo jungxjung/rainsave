@@ -253,7 +253,7 @@ vm.component('my-header', {
       <img class="d-inline-block align-text-top" src="/images/rainsave_icon01.svg" alt="Rain SAVE 儲集框架" width="60"/>
         <div class="brand d-inline-block align-text-top"> 
           <h3 class="rainsave">Rain SAVE 儲集框架</h3>
-          <img class="company_name" src="/images/正在旺LOGO.png" alt="正在旺企業有限公司" width="180"/>
+          <img class="company_name" src="/images/zhengzaiwang_logo.png" alt="正在旺企業有限公司" width="180"/>
         </div></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-telegram"> </i></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -352,7 +352,7 @@ vm.component('my-footer', {
     </div>
   </div>
   <div class="mt-5 text-center position-relative">
-    <img width="300" class="mx-auto position-absolute top-50 start-50 translate-middle z-2 bg-light p-2" src="/images/正在旺LOGO.png" alt="正在旺企業有限公司">
+    <img width="300" class="mx-auto position-absolute top-50 start-50 translate-middle z-2 bg-light p-2" src="/images/zhengzaiwang_logo.png" alt="正在旺企業有限公司">
     <hr class="bg-primary border-0 opacity-100" style="height:2px;">
     <p class="text-nowrap m-0 text-primary text-center fs-6 fw-light position-absolute top-100 start-50 translate-middle" style="padding-top: 65px;">© 2023 正在旺企業-{{ message }}. All Rights Reserved.</p> 
   </div>
