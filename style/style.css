@@ -1175,8 +1175,8 @@ a.company_intro_small {
 @media screen and (max-width: 769px) {
   ul.nav {
     display: block;
-    top: -33px;
-    background-color: #E5E5E5;
+    /* top: -33px; */
+    /* background-color: #E5E5E5; */
   }
 
   .nav-link {

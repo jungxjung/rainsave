@@ -249,37 +249,43 @@ const vm = Vue.createApp({
 vm.component('my-header', {
   template: `
   <nav class="navbar navbar-expand-md fixed-top top_1 bg-light">
-    <div class="container-fluid"><a class="navbar-brand" href="/index.html">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html">
       <img class="d-inline-block align-text-top" src="/images/rainsave_icon01.svg" alt="Rain SAVE 儲集框架" width="60"/>
-        <div class="brand d-inline-block align-text-top"> 
-          <h3 class="rainsave">Rain SAVE 儲集框架</h3>
-          <img class="company_name" src="/images/zhengzaiwang_logo.png" alt="正在旺企業有限公司" width="180"/>
-        </div></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-telegram"> </i></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="company_info ms-auto">
-          <div class="line"></div>
-          <div class="addr">地址：{{ address }}</div>
-          <div class="tel_fax">電話：{{ tel_number }} / 傳真：{{ fax_number }}</div>
-          <div class="email">E-mail：{{ email }}</div>
-        </div>
+      <div class="brand d-inline-block align-text-top"> 
+        <h3 class="rainsave">Rain SAVE 儲集框架</h3>
+        <img class="company_name" src="/images/zhengzaiwang_logo.png" alt="正在旺企業有限公司" width="180"/>
+      </div>
+    </a>
+    <button class="navbar-toggler nav_hide border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon m-0"></span></button>
+    <div class="d-none d-md-block" id="">
+      <div class="company_info ms-auto">
+        <div class="line"></div>
+        <div class="addr">地址：{{ address }}</div>
+        <div class="tel_fax">電話：{{ tel_number }} / 傳真：{{ fax_number }}</div>
+        <div class="email">E-mail：{{ email }}</div>
+      </div>
+    </div>
+  </div>
+</nav>
+<header id="rainsave_page01">
+  <nav class="navbar navbar-expand-md fixed-top z-3">
+    <div class="collapse navbar-collapse" id="mainmenu">
+      <ul class="nav ms-auto mb-0 pt-1">
+        <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page01.html">產品大樣與特點</a></li>
+        <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page07.html">地震淺變性</a></li>
+        <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page06.html">使用須知</a></li>
+        <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page05.html">需求計算與資源下載</a></li>
+        <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page08.html">實績案例</a></li>
+      </ul>
+      <div class="d-md-none company_info p-3 bg-secondary-subtle">
+        <div class="addr">地址：{{ address }}</div>
+        <div class="tel_fax">電話：{{ tel_number }} / 傳真：{{ fax_number }}</div>
+        <div class="email">E-mail：{{ email }}</div>
       </div>
     </div>
   </nav>
-  <header id="rainsave_page01">
-    <nav class="navbar navbar-expand-md fixed-top top_2">
-      <button class="navbar-toggler ms-auto nav_hide" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent_1" aria-controls="navbarSupportedContent_1" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent_1">
-        <ul class="nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/pages/page01.html">產品大樣與特點</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/page07.html">地震淺變性</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/page06.html">使用須知</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/page05.html">需求計算與資源下載</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pages/page08.html">實績案例</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>`,
+</header>`,
   data () {
     return $headerFooterCommon; 
   },
