@@ -58,7 +58,7 @@ function downloadIMG(){
   for(let i=1; i<=11; i++){
     bodymovin.loadAnimation({
       container: document.getElementById('downloadIMG'+ i),
-      path: '/images/animation/download.json',
+      path: '/images/animation/download_cload.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -248,7 +248,7 @@ const vm = Vue.createApp({
 
 vm.component('my-header', {
   template: `
-  <nav class="navbar navbar-expand-md fixed-top top_1">
+  <nav class="navbar navbar-expand-md fixed-top top_1 bg-light">
     <div class="container-fluid"><a class="navbar-brand" href="/index.html">
       <img class="d-inline-block align-text-top" src="/images/rainsave_icon01.svg" alt="Rain SAVE 儲集框架" width="60"/>
         <div class="brand d-inline-block align-text-top"> 

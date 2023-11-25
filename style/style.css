@@ -37,7 +37,6 @@ html, body {
 
 /*共同-Header-導覽列*/
 .top_1 {
-  background-color: #FFF;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   z-index: 5;
 }
