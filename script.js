@@ -354,7 +354,7 @@ vm.component('my-footer', {
   <div class="mt-5 text-center position-relative">
     <img width="300" class="mx-auto position-absolute top-50 start-50 translate-middle z-2 bg-light p-2" src="/images/正在旺LOGO.png" alt="正在旺企業有限公司">
     <hr class="bg-primary border-0 opacity-100" style="height:2px;">
-    <p class="text-nowrap m-0 text-primary text-center fs-6 fw-light position-absolute top-100 start-50 translate-middle" style="padding-top: 65px;">© 2022 正在旺企業-{{ message }}. All Rights Reserved.</p> 
+    <p class="text-nowrap m-0 text-primary text-center fs-6 fw-light position-absolute top-100 start-50 translate-middle" style="padding-top: 65px;">© 2023 正在旺企業-{{ message }}. All Rights Reserved.</p> 
   </div>
   <div class="bg-primary mt-5">
     <div class="row infoboxes">
