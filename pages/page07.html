@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW" >
 <head>
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDL2Z0JYQR"></script> 
+  <script>
+    window.dataLayer = window.dataLayer || [];   
+    function gtag(){dataLayer.push(arguments);}   
+    gtag('js', new Date());   
+    gtag('config', 'G-KDL2Z0JYQR');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rain SAVE 儲集框架_荷重與壓力</title>
@@ -17,6 +25,15 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
   <link rel="stylesheet" href="../style/style.css">
   <script src="https://unpkg.com/vue@next"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11422925387"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11422925387');
+  </script>
 </head>
 <body class="bg-light">
   <my-header></my-header>
@@ -360,7 +377,7 @@
         </div>
         <div>
           <div id="pressureYT" class="mt-5">
-            <a class="" type="button" onclick="loadYT('#pressureYT','Efv--06DK5M')">
+            <button class="border-0" type="button" onclick="loadYT('#pressureYT','Efv--06DK5M')">
               <div class="position-relative">
                 <picture>
                   <source srcset="/images/page07/carpressure.avif" type="image/avif" />
@@ -368,35 +385,8 @@
                 </picture>
                 <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
               </div>
-            </a>
-            <!-- <a class="modal-video-btn" data-src="" type="button" data-target="#carpress" onclick="openYTModal('#carpress','Efv--06DK5M')">
-              <div class="position-relative">
-                <picture>
-                  <source srcset="/images/page07/carpressure.avif" type="image/avif" />
-                  <img class="w-100" src="https://img.youtube.com/vi/Efv--06DK5M/maxresdefault.jpg" alt="T-25車壓荷重示意">
-                </picture>
-                <img class="video_play_btn position-absolute top-50 start-50 translate-middle" src="/images/play_btn.png" alt="play button">
-              </div>
-            </a> -->
+            </button>
           </div>
-
-          <!-- <div class="modal fade" id="carpress" tabindex="-1" role="dialog" aria-labelledby="carpressL" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="carpressL">T-25車壓荷重示意</h5>
-                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" onclick="stopYT('#carpress', 'Efv--06DK5M')">
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="ratio ratio-16x9 modal-yt-container"></div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal" onclick="stopYT('#carpress', 'Efv--06DK5M')">關閉</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
 
         <div class="col-sm-12">

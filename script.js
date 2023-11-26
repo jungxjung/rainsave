@@ -68,7 +68,7 @@ function downloadIMG(){
 }
 
 function loadYT(frameID, link){
-  var oldAnchor = document.querySelector(frameID + ' a');
+  var oldAnchor = document.querySelector(frameID + ' button');
   if (oldAnchor) {
     oldAnchor.remove();
   }
@@ -80,6 +80,10 @@ function loadYT(frameID, link){
   document.querySelector(frameID).classList.add('ratio');
   document.querySelector(frameID).classList.add('ratio-16x9');
   document.querySelector(frameID).append(iframe);
+}
+
+function loadSketchfab(){
+  
 }
 
 
