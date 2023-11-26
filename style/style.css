@@ -222,6 +222,13 @@ ul.nav {
   height: 500px;
 }
 
+#sketchfab2 button {
+  background-image: url(https://media.sketchfab.com/models/55d9270651be47a8902569b96da6f287/thumbnails/659c57d1cfbd45369d3f829a02584d79/342930947f1e4afdbf4d5322660ecd20.jpeg);
+  background-position: 50%;
+  background-size: cover;
+  height: 500px;
+}
+
 
 /*個別調整_首頁*/
 /*首頁-標頭首頁視覺照*/

@@ -47,9 +47,21 @@ function move360(){
   });
 }
 
+function move360_2(){
+  bodymovin.loadAnimation({
+    container: document.getElementById('move360_2'),
+    path: '/images/animation/rainsave_360_8sec.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    name: "360 animation",
+  });
+}
+
 function home_ani(){
   thumb_ani_home();
   move360();
+  move360_2();
 }
 
 function thumb_ani(){
