@@ -214,6 +214,14 @@ ul.nav {
 }
 /* 左右動畫end */
 
+/* sketchfab */
+#sketchfab1 button {
+  background-image: url(https://media.sketchfab.com/models/771e4a463b8b45eb93b1633b30725851/thumbnails/0331de852b4148c3bfb66e03f899e047/c7fc787821bc4b5cb85c0241a3e0130d.jpeg);
+  background-position: 50%;
+  background-size: cover;
+  height: 500px;
+}
+
 
 /*個別調整_首頁*/
 /*首頁-標頭首頁視覺照*/

@@ -24,6 +24,7 @@ $(document).ready(function(){
 });
 //document ready end
 
+
 function thumb_ani_home(){
   bodymovin.loadAnimation({
     container: document.getElementById('thumb_ani_home'),
@@ -33,6 +34,22 @@ function thumb_ani_home(){
     autoplay: true,
     name: "thumb animation",
   });
+}
+
+function move360(){
+  bodymovin.loadAnimation({
+    container: document.getElementById('move360'),
+    path: '/images/animation/rainsave_360_8sec.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    name: "360 animation",
+  });
+}
+
+function home_ani(){
+  thumb_ani_home();
+  move360();
 }
 
 function thumb_ani(){
@@ -83,7 +100,7 @@ function loadYT(frameID, link){
 }
 
 function loadSketchfab(){
-  
+
 }
 
 
