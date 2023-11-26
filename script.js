@@ -306,31 +306,31 @@ vm.component('my-footer', {
         <div class="pe-4">
           <picture>
             <source srcset="/images/footer_labicon/UL.avif" type="image/avif" />
-            <img src="/images/footer_labicon/UL.png" height='40'>
+            <img src="/images/footer_labicon/UL.png" height='40' alt='UL檢測'>
           </picture>
         </div>
         <div class="pe-4">
           <picture>
             <source srcset="/images/footer_labicon/TAF.avif" type="image/avif" />
-            <img src="/images/footer_labicon/TAF.png" height='40'>
+            <img src="/images/footer_labicon/TAF.png" height='40' alt='TAF檢測'>
           </picture>
         </div>
         <div class="pe-4">
           <picture>
             <source srcset="/images/footer_labicon/zt.avif" type="image/avif" />
-            <img src="/images/footer_labicon/ZT.jpg" height='40'>
+            <img src="/images/footer_labicon/ZT.jpg" height='40' alt='日鼎檢測'>
           </picture>
         </div>
         <div class="pe-4">
           <picture>
             <source srcset="/images/footer_labicon/ttt.avif" type="image/avif" />
-            <img src="/images/footer_labicon/TTT.png" height='40'>
+            <img src="/images/footer_labicon/TTT.png" height='40' alt='鴻儀科技'>
           </picture>
         </div>
         <div class="">
           <picture>
             <source srcset="/images/footer_labicon/SGS.avif" type="image/avif" />
-            <img src="/images/footer_labicon/SGS.jpg" height='40'>
+            <img src="/images/footer_labicon/SGS.jpg" height='40' alt='SGS檢測'>
           </picture>
         </div>
       </div>
