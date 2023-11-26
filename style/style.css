@@ -216,14 +216,14 @@ ul.nav {
 
 /* sketchfab */
 #sketchfab1 button {
-  background-image: url(https://media.sketchfab.com/models/771e4a463b8b45eb93b1633b30725851/thumbnails/0331de852b4148c3bfb66e03f899e047/c7fc787821bc4b5cb85c0241a3e0130d.jpeg);
+  background-image: url(/images/homepage/sf1.jpeg);
   background-position: 50%;
   background-size: cover;
   height: 500px;
 }
 
 #sketchfab2 button {
-  background-image: url(https://media.sketchfab.com/models/55d9270651be47a8902569b96da6f287/thumbnails/659c57d1cfbd45369d3f829a02584d79/342930947f1e4afdbf4d5322660ecd20.jpeg);
+  background-image: url(/images/homepage/sf2.jpeg);
   background-position: 50%;
   background-size: cover;
   height: 500px;
