@@ -99,7 +99,14 @@ function loadYT(frameID, link){
   document.querySelector(frameID).append(iframe);
 }
 
-function loadSketchfab(){
+function loadSketchfab(wrapperID,sflink){
+  var oldAnchor = document.querySelector(wrapperID + ' button');
+  if (oldAnchor){
+    oldAnchor.remove();
+  }
+
+  var sketchfab_container = document.querySelector(wrapperID);
+  sketchfab_container.innerHTML = '<iframe width="100%" height="500px" title="儲集框架主體-雨水管理大師" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/' + sflink + '/embed?camera=0"> </iframe>';
 
 }
 
