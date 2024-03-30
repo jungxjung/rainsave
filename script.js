@@ -19,12 +19,55 @@ $(document).ready(function(){
     if (screenWidth < 576) {
       footerContactBox.classList.remove("border-end");
     }
-
-
 });
 //document ready end
 
+// homepage carousel
+// Select all items
+const items = document.querySelectorAll('.c-item');
+    
+// Create a function to wrap items in carousel-items and rows
+function wrapItemsInCarousel(items) {
+    // Create a container for rows
+    const container = document.querySelector('.carousel-inner');
 
+    // Initialize a counter for carousel items
+    let carouselCount = 0;
+    
+    // Create carousel items and wrap rows in each carousel item
+    let carouselItem;
+    items.forEach((item, index) => {
+        // Start a new carousel item for every third item or the first item
+        if (index % 3 === 0 || index === 0) {
+            carouselCount++;
+            carouselItem = document.createElement('div');
+            carouselItem.className = 'carousel-item';
+            // Add 'active' class to the first carousel item
+            if (carouselCount === 1) {
+                carouselItem.classList.add('active');
+            }
+            container.appendChild(carouselItem);
+        }
+        // Create a row for every third item or the first item
+        if (index % 3 === 0 || index === 0) {
+            const row = document.createElement('div');
+            row.className = 'row';
+            carouselItem.appendChild(row);
+        }
+        // Append the item to the current row
+        carouselItem.lastChild.appendChild(item);
+    });
+    
+    // Replace the original items container with the new container
+    //document.getElementById('items').replaceWith(container);
+}
+
+// Call the function with the items
+wrapItemsInCarousel(items);
+
+// homepage carousel end
+
+//animation controll
 function thumb_ani_home(){
   bodymovin.loadAnimation({
     container: document.getElementById('thumb_ani_home'),
@@ -95,6 +138,8 @@ function downloadIMG(){
     });
   }
 }
+
+//animation controll end
 
 function loadYT(frameID, link){
   var oldAnchor = document.querySelector(frameID + ' button');
@@ -188,6 +233,20 @@ const vm = Vue.createApp({
           intro: '此案位於高雄楠梓，為張瑪龍建築師事務所設計。為公共工程，總計施作52.5m³，上方覆土約30~50cm，為基地保水滲透型。', 
           case_href: './page-cases/case04.html',
         },
+        {
+          picture_avif_src:'/images/case09/qingjiang01.avif',
+          picture_src: '/images/case09/qingjiang01.png',
+          title: '北投區 韋昌画清江社區',
+          intro: '此案位於台北市北投區清江路91巷。總計施作3m³，上方覆土約30~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case09.html',
+        },
+        {
+          picture_avif_src:'/images/case10/nanping01.avif',
+          picture_src: '/images/case10/nanping01.png',
+          title: '宜蘭市 南屏國民小學',
+          intro: '此案位於宜蘭南屏國小，係為公共工程案。總計施作87m³，上方覆土約30~60cm，為基地保水滲透型。 ', 
+          case_href: './page-cases/case10.html',
+        },
       ],
       savecases: [
         {
@@ -232,28 +291,52 @@ const vm = Vue.createApp({
       ],
       //個別案例頁左側欄位(page-cases)
       casetitles: [
-       {title: '士林北藝中心', 
-        case_href: './case01.html'},
-       {title: '台北市日新國小',
-        case_href: './case02.html'},
-       {title: '龜山區市地重劃',
-        case_href: './case03.html'},
-       {title: '高雄經濟部金屬中心',
-        case_href: './case04.html'},
-       {title: '南投貓羅溪',
-        case_href: './case08.html'},
-       {title: '基隆海洋大學',
-        case_href: './case05.html'},
-       {title: '基隆海科典藏館',
-        case_href: './case06.html'},
-       {title: '象山中強公園',
-        case_href: './case07.html'},
+        {
+          title: '士林北藝中心', 
+          case_href: './case01.html'
+        },
+        {
+          title: '台北市日新國小',
+          case_href: './case02.html'
+        },
+        {
+          title: '龜山區市地重劃',
+          case_href: './case03.html'
+        },
+        {
+          title: '高雄經濟部金屬中心',
+          case_href: './case04.html'
+        },
+        {
+          title: '北投區 韋昌画清江社區',
+          case_href: './case09.html'
+        },
+        {
+          title: '宜蘭市 南屏國民小學',
+          case_href: './case10.html'
+        },
+        {
+          title: '南投貓羅溪',
+          case_href: './case08.html'
+        },
+        {
+          title: '基隆海洋大學',
+          case_href: './case05.html'
+        },
+        {
+          title: '基隆海科典藏館',
+          case_href: './case06.html'
+        },
+        {
+          title: '象山中強公園',
+          case_href: './case07.html'
+        },
        
       ],
       //知識分享左側導覽列用V-for渲染(page-articles)
       knowledge: [
         {
-          picture_src: '/images/homepage/articleimg_01.jpg',
+          picture_src: '/images/homepage/articleimg_01.png',
           title: '如何在儲集框架、混凝土水箱、PP(FRP)桶槽型水箱中做選擇?',
           intro: '施作10立方~1000立方的滯洪儲水、滲透水設施建議使用正在旺所生產的RAIN SAVE 儲集框架產品，具備...',
           case_href: 'article01.html',
@@ -269,6 +352,18 @@ const vm = Vue.createApp({
           title: '為何使用 Rain SAVE 儲集框架?(進水速度與地震帶上的適應性探討)',
           intro: '若考量雨水流速(進水速度)，長短板型式及框架型式因內部結構空間較大，是較理想的選擇；而若是考慮到產品於亞洲地震帶...',
           case_href: 'article03.html',
+        },
+        {
+          picture_src: '/images/article04/important_effect.jpg',
+          title: 'Rain SAVE儲集框架在都市水資源管理中的重要作用',
+          intro: 'Rain SAVE儲集框架，又稱雨水積磚，主要利用地下空間儲集雨水來達到基地保水及雨水再利用的目的，鋪設地工材料...',
+          case_href: 'article04.html',
+        },
+        {
+          picture_src: '/images/article05/#',
+          title: '使用Rain SAVE儲集框架有哪些優點？哪些缺點？',
+          intro: 'Rain SAVE儲集框架作為水資源管理以及環境保護的重要角色，由於其具備的優點近年來被廣泛使用...',
+          case_href: 'article05.html',
         },
       ]
 
