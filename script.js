@@ -82,7 +82,7 @@ function thumb_ani_home(){
 function move360(){
   bodymovin.loadAnimation({
     container: document.getElementById('move360'),
-    path: '/images/animation/rainsave_360_8sec.json',
+    path: '/images/animation/360_bg_blue.json',
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -93,7 +93,7 @@ function move360(){
 function move360_2(){
   bodymovin.loadAnimation({
     container: document.getElementById('move360_2'),
-    path: '/images/animation/rainsave_360_8sec.json',
+    path: '/images/animation/360_bg_blue.json',
     renderer: 'svg',
     loop: true,
     autoplay: true,
