@@ -247,6 +247,20 @@ const vm = Vue.createApp({
           intro: '此案位於宜蘭南屏國小，係為公共工程案。總計施作87m³，上方覆土約30~60cm，為基地保水滲透型。 ', 
           case_href: './page-cases/case10.html',
         },
+        {
+          picture_avif_src:'/images/case11/luzhu01.avif',
+          picture_src: '/images/case11/luzhu01.png',
+          title: '桃園市蘆竹區 安利鋼鐵廠',
+          intro: '此案位於桃園市蘆竹區長榮路191號旁。總計施作135m3，上方覆土約30~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case11.html',
+        },
+        {
+          picture_avif_src:'/images/case12/daan01.avif',
+          picture_src: '/images/case12/daan01.png',
+          title: '台北市大安區 大安富御社區',
+          intro: '此案位於台北市大安區臥龍街300號。總計施作27m3，上方覆土約30~60cm，為基地保水滲透型。  ', 
+          case_href: './page-cases/case12.html',
+        },
       ],
       savecases: [
         {
@@ -331,6 +345,14 @@ const vm = Vue.createApp({
           title: '象山中強公園',
           case_href: './case07.html'
         },
+        {
+          title: '桃園市蘆竹區 安利鋼鐵廠',
+          case_href: './case11.html'
+        },
+        {
+          title: '台北市大安區 大安富御社區',
+          case_href: './case12.html'
+        }
        
       ],
       //知識分享左側導覽列用V-for渲染(page-articles)
@@ -364,6 +386,18 @@ const vm = Vue.createApp({
           title: '使用Rain SAVE儲集框架有哪些優點？哪些缺點？',
           intro: 'Rain SAVE儲集框架作為水資源管理以及環境保護的重要角色，由於其具備的優點近年來被廣泛使用...',
           case_href: 'article05.html',
+        },
+        {
+          picture_src: '/images/article06/#',
+          title: 'Rain SAVE儲集框架對環境有哪些好處？儲集框架的5大功用',
+          intro: 'Rain SAVE儲集框架的應用，不僅能夠解決城市面臨的水資源浪費問題，還能夠有效地減少熱島效應... ',
+          case_href: 'article06_five_benefits_for_the_environment.html',
+        },
+        {
+          picture_src: '/images/article07/#',
+          title: 'Rain SAVE儲集框架是怎麼運作的？會經過哪些流程？',
+          intro: 'Rain SAVE儲集框架不僅能夠收集雨水，並且通過過濾和淨化，將其轉化為可再利用的資源...',
+          case_href: 'article07_rainsave_process.html',
         },
       ]
 
