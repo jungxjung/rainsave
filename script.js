@@ -261,6 +261,13 @@ const vm = Vue.createApp({
           intro: '此案位於台北市大安區臥龍街300號。總計施作27m3，上方覆土約30~60cm，為基地保水滲透型。  ', 
           case_href: './page-cases/case12.html',
         },
+        {
+          picture_avif_src:'/images/case14/guanyin01.avif',
+          picture_src: '/images/case14/guanyin01.png',
+          title: '桃園市觀音區 鴻錦十映社區',
+          intro: '此案位於桃園市觀音區保生九街。總計施作28.5m3，上方覆土約50cm，為基地保水滲透型。', 
+          case_href: './page-cases/case14.html',
+        },
       ],
       savecases: [
         {
@@ -293,7 +300,13 @@ const vm = Vue.createApp({
           title: '象山中強公園',
           intro: '此案位於捷運象山站旁，係為公共工程案。總計施作252m³，上方覆土約50~55cm，為儲水再利用型。',
           case_href: './page-cases/case07.html',
-
+        },
+        {
+          picture_avif_src:'/images/case13/zhongli_park05.avif',
+          picture_src: '/images/case13/zhongli_park05.PNG',
+          title: '桃園市中壢區 中壢運動公園',
+          intro: '此案位於中壢運動公園，係為公共工程案。總計施作210m³，上方覆土約45~60cm，為儲水再利用型。',
+          case_href: './page-cases/case13.html',
         },
         // {
         //   picture_src: '',
@@ -352,6 +365,14 @@ const vm = Vue.createApp({
         {
           title: '台北市大安區 大安富御社區',
           case_href: './case12.html'
+        },
+        {
+          title: '桃園市中壢區 中壢運動公園',
+          case_href: './case13.html'
+        },
+        {
+          title: '桃園市觀音區 鴻錦十映社區',
+          case_href: './case14.html'
         }
        
       ],
@@ -398,6 +419,18 @@ const vm = Vue.createApp({
           title: 'Rain SAVE儲集框架是怎麼運作的？會經過哪些流程？',
           intro: 'Rain SAVE儲集框架不僅能夠收集雨水，並且通過過濾和淨化，將其轉化為可再利用的資源...',
           case_href: 'article07_rainsave_process.html',
+        },
+        {
+          picture_src: '/images/article08/#',
+          title: 'Rain SAVE儲集框架可以安裝在哪些地方呢？',
+          intro: 'Rain SAVE儲集框架因其靈活的安裝方式且上方土地可有效利用的優點，使它能夠應用於各種不同的場景...',
+          case_href: 'article08_rainsave_suitable_places.html',
+        },
+        {
+          picture_src: '/images/article09/#',
+          title: 'Rain SAVE儲集框架是什麼材質？使用這個材質的原因？',
+          intro: 'Rain SAVE儲集框架使用的材質為聚丙烯（Polypropylene，簡稱PP），是一種輕質而堅固的材料...',
+          case_href: 'article09_rainsave_material.html',
         },
       ]
 
