@@ -268,6 +268,20 @@ const vm = Vue.createApp({
           intro: '此案位於桃園市觀音區保生九街。總計施作28.5m3，上方覆土約50cm，為基地保水滲透型。', 
           case_href: './page-cases/case14.html',
         },
+        {
+          picture_avif_src:'/images/case15/beitun01.avif',
+          picture_src: '/images/case15/beitun01.png',
+          title: '台中市北屯區 登陽釀時光社區',
+          intro: '此案位於台中市北屯區南興路與敦富七街口。總計施作43.75m³，上方覆土約45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case15.html',
+        },
+        {
+          picture_avif_src:'/images/case16/kinmen01.avif',
+          picture_src: '/images/case16/kinmen01.png',
+          title: '金門縣金寧鄉 榜林社區活動中心',
+          intro: '此案位於金門縣金寧鄉榜林社區活動中心，係為公共工程案。總計施作57m3，上方覆土約45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case16.html',
+        },
       ],
       savecases: [
         {
@@ -373,6 +387,14 @@ const vm = Vue.createApp({
         {
           title: '桃園市觀音區 鴻錦十映社區',
           case_href: './case14.html'
+        },
+        {
+          title: '台中市北屯區 登陽釀時光社區',
+          case_href: './case15.html'
+        },
+        {
+          title: '金門縣金寧鄉 榜林社區活動中心',
+          case_href: './case16.html'
         }
        
       ],
@@ -431,6 +453,12 @@ const vm = Vue.createApp({
           title: 'Rain SAVE儲集框架是什麼材質？使用這個材質的原因？',
           intro: 'Rain SAVE儲集框架使用的材質為聚丙烯（Polypropylene，簡稱PP），是一種輕質而堅固的材料...',
           case_href: 'article09_rainsave_material.html',
+        },
+        {
+          picture_src: '/images/article10/#',
+          title: '安裝Rain SAVE儲集框架前需要考量什麼呢？儲集框架的設計注意事項 ',
+          intro: '在進行Rain SAVE儲集框架的安裝之前， 需要考量合適的配置位置、足夠的空間及槽體...',
+          case_href: 'article10_rainsave_things_to_consider.html',
         },
       ]
 
