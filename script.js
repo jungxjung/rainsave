@@ -282,6 +282,20 @@ const vm = Vue.createApp({
           intro: '此案位於金門縣金寧鄉榜林社區活動中心，係為公共工程案。總計施作57m3，上方覆土約45~60cm，為基地保水滲透型。', 
           case_href: './page-cases/case16.html',
         },
+        {
+          picture_avif_src:'/images/case17/wanhua_01.avif',
+          picture_src: '/images/case17/wanhua_01.png',
+          title: '台北市萬華區 民凱萬錦社區',
+          intro: '此案位於台北市萬華區民和街100號。總計施作10m³，上方覆土約45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case17.html',
+        },
+        {
+          picture_avif_src:'/images/case18/daguan_01.avif',
+          picture_src: '/images/case18/daguan_01.png',
+          title: '桃園市桃園區 大觀雲滙社區',
+          intro: '此案位於桃園市桃園區大興西路三段與大吉街口。總計施作16.9m3，上方覆土45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case18.html',
+        },
       ],
       savecases: [
         {
@@ -395,6 +409,14 @@ const vm = Vue.createApp({
         {
           title: '金門縣金寧鄉 榜林社區活動中心',
           case_href: './case16.html'
+        },
+        {
+          title: '台北市萬華區 民凱萬錦社區',
+          case_href: './case17.html'
+        },
+        {
+          title: '桃園市桃園區 大觀雲滙社區',
+          case_href: './case18.html'
         }
        
       ],
@@ -459,6 +481,12 @@ const vm = Vue.createApp({
           title: '安裝Rain SAVE儲集框架前需要考量什麼呢？儲集框架的設計注意事項 ',
           intro: '在進行Rain SAVE儲集框架的安裝之前， 需要考量合適的配置位置、足夠的空間及槽體...',
           case_href: 'article10_rainsave_things_to_consider.html',
+        },
+        {
+          picture_src: '/images/article11/#',
+          title: 'Rain SAVE儲集框架如何維護？儲集框架的管理方式',
+          intro: '為維持Rain SAVE儲集框架滲透功能，需定期進行設施的維護管理，大致分為巡檢及維護兩大項目...',
+          case_href: 'article11_rainsave_maintenance.html',
         },
       ]
 
