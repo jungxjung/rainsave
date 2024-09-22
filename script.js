@@ -535,6 +535,7 @@ vm.component('my-header', {
         <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page06.html">使用須知</a></li>
         <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page05.html">需求計算與資源下載</a></li>
         <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="/pages/page08.html">實績案例</a></li>
+        <li class="nav-item"><a class="nav-link bg-secondary-subtle" href="#">影音頻道</a></li>
       </ul>
       <div class="d-md-none company_info p-3 bg-secondary-subtle">
         <div class="addr">地址：{{ address }}</div>
