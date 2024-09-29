@@ -296,6 +296,13 @@ const vm = Vue.createApp({
           intro: '此案位於桃園市桃園區大興西路三段與大吉街口。總計施作16.9m3，上方覆土45~60cm，為基地保水滲透型。', 
           case_href: './page-cases/case18.html',
         },
+        {
+          picture_avif_src:'/images/case20/dunbei_01.avif',
+          picture_src: '/images/case20/dunbei_01.png',
+          title: '台北市松山區 敦北文華社區',
+          intro: '此案位於台北市松山區南京東路四段52巷21號。總計施作2m³，上方覆土45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case20.html',
+        },
       ],
       savecases: [
         {
@@ -335,6 +342,13 @@ const vm = Vue.createApp({
           title: '桃園市中壢區 中壢運動公園',
           intro: '此案位於中壢運動公園，係為公共工程案。總計施作210m³，上方覆土約45~60cm，為儲水再利用型。',
           case_href: './page-cases/case13.html',
+        },
+        {
+          picture_avif_src:'/images/case19/xinzhu_05.avif',
+          picture_src: '/images/case19/xinzhu_05.PNG',
+          title: '新竹市東區 新竹國民小學',
+          intro: '此案位於新竹國民小學，係為公共工程案。總計施作22.5m³，上方覆土約45~60cm，為儲水再利用型。',
+          case_href: './page-cases/case19.html',
         },
         // {
         //   picture_src: '',
@@ -417,7 +431,15 @@ const vm = Vue.createApp({
         {
           title: '桃園市桃園區 大觀雲滙社區',
           case_href: './case18.html'
-        }
+        },
+        {
+          title: '新竹市東區 新竹國民小學',
+          case_href: './case19.html'
+        },
+        {
+          title: '台北市松山區 敦北文華社區',
+          case_href: './case20.html'
+        },
        
       ],
       //知識分享左側導覽列用V-for渲染(page-articles)
