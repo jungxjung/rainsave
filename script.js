@@ -488,6 +488,18 @@ const vm = Vue.createApp({
           intro: '為維持Rain SAVE儲集框架滲透功能，需定期進行設施的維護管理，大致分為巡檢及維護兩大項目...',
           case_href: 'article11_rainsave_maintenance.html',
         },
+        {
+          picture_src: '/images/article12/#',
+          title: 'Rain SAVE 儲集框架是否容易淤積? 若淤積該如何清理?',
+          intro: '施作一槽儲集框架通常會搭配設置一座清潔檢視井（依案件需求有所不同），可透過檢視井大...',
+          case_href: 'article12_rainsave_dredging.html',
+        },
+        {
+          picture_src: '/images/article13/#',
+          title: 'Rain SAVE 儲集框架能否成為海綿城市的一環？',
+          intro: '隨著城市化的加速，水災和水資源短缺問題日益嚴重。海綿城市理念的出現，使得越來越多的都市...',
+          case_href: 'article13_rainsave_sponge_city.html',
+        },
       ]
 
     }
@@ -619,7 +631,7 @@ vm.component('my-footer', {
   <div class="mt-5 text-center position-relative">
     <img width="300" class="mx-auto position-absolute top-50 start-50 translate-middle z-2 bg-light p-2" src="/images/zhengzaiwang_logo.png" alt="正在旺企業有限公司">
     <hr class="bg-primary border-0 opacity-100" style="height:2px;">
-    <p class="text-nowrap m-0 text-primary text-center fs-6 fw-light position-absolute top-100 start-50 translate-middle" style="padding-top: 65px;">© 2023 正在旺企業-{{ message }}. All Rights Reserved.</p> 
+    <p class="text-nowrap m-0 text-primary text-center fs-6 fw-light position-absolute top-100 start-50 translate-middle" style="padding-top: 65px;">© 2024 正在旺企業-{{ message }}. All Rights Reserved.</p> 
   </div>
   <div class="bg-primary mt-5">
     <div class="row infoboxes">
