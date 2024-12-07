@@ -303,6 +303,20 @@ const vm = Vue.createApp({
           intro: '此案位於台北市松山區南京東路四段52巷21號。總計施作2m³，上方覆土45~60cm，為基地保水滲透型。', 
           case_href: './page-cases/case20.html',
         },
+        {
+          picture_avif_src:'/images/case21/xinzhu_xiangshan_01.avif',
+          picture_src: '/images/case21/xinzhu_xiangshan_01.png',
+          title: '新竹市香山區 弘塑科技股份有限公司',
+          intro: '此案位於新竹市香山區中華路六段 89 號。總計施作 38m³，上方覆土約 45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case21.html',
+        },
+        {
+          picture_avif_src:'/images/case22/farglory_qingchuan_01.avif',
+          picture_src: '/images/case22/farglory_qingchuan_01.png',
+          title: '台北市文山區 遠雄晴川社區',
+          intro: '此案位於台北市文山區木柵路三段 169 巷 10 號。總計施作 9m3，上方覆土 45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case22.html',
+        },
       ],
       savecases: [
         {
@@ -440,6 +454,14 @@ const vm = Vue.createApp({
           title: '台北市松山區 敦北文華社區',
           case_href: './case20.html'
         },
+        {
+          title: '新竹市香山區 弘塑科技股份有限公司',
+          case_href: './case21.html'
+        },
+        {
+          title: '台北市文山區 遠雄晴川社區',
+          case_href: './case22.html'
+        },
        
       ],
       //知識分享左側導覽列用V-for渲染(page-articles)
@@ -521,6 +543,12 @@ const vm = Vue.createApp({
           title: 'Rain SAVE 儲集框架能否成為海綿城市的一環？',
           intro: '隨著城市化的加速，水災和水資源短缺問題日益嚴重。海綿城市理念的出現，使得越來越多的都市...',
           case_href: 'article13_rainsave_sponge_city.html',
+        },
+        {
+          picture_src: '/images/article14/#',
+          title: '城市熱島效應帶來的影響，Rain SAVE 儲集框架如何應對？',
+          intro: '城市熱島效應是指由於人類活動，導致城市及其周邊地區的氣溫上升的現象，同時也會帶來...',
+          case_href: 'article14_urban_heat_island.html',
         },
       ]
 
