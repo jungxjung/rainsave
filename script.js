@@ -23,11 +23,13 @@ $(document).ready(function(){
 //document ready end
 
 // homepage carousel
-// Select all items
-const items = document.querySelectorAll('.c-item');
+
     
 // Create a function to wrap items in carousel-items and rows
-function wrapItemsInCarousel(items) {
+function wrapItemsInCarousel() {
+    // Select all items
+    const items = document.querySelectorAll('.c-item');
+
     // Create a container for rows
     const container = document.querySelector('.carousel-inner');
 
@@ -62,9 +64,7 @@ function wrapItemsInCarousel(items) {
     //document.getElementById('items').replaceWith(container);
 }
 
-// Call the function with the items
-wrapItemsInCarousel(items);
-
+wrapItemsInCarousel();
 // homepage carousel end
 
 //animation controll
@@ -199,9 +199,9 @@ const vm = Vue.createApp({
   data () {
     return {
       address: '台北市北投區清江路247巷8號1樓',
-      tel_number: '(02)2898-6207',
+      tel_number: '(02)2898-6776',
       fax_number: '(02)2898-6132',
-      email: 'rainsave@rainsave.com.tw',
+      email: 'RS@rainsave.com.tw',
       message: '',
       //實績案例資料用V-for渲染(page08)
       infilcases: [
@@ -314,8 +314,22 @@ const vm = Vue.createApp({
           picture_avif_src:'/images/case22/farglory_qingchuan_01.avif',
           picture_src: '/images/case22/farglory_qingchuan_01.png',
           title: '台北市文山區 遠雄晴川社區',
-          intro: '此案位於台北市文山區木柵路三段 169 巷 10 號。總計施作 9m3，上方覆土 45~60cm，為基地保水滲透型。', 
+          intro: '此案位於台北市文山區木柵路三段 169 巷 10 號。總計施作 9m³，上方覆土 45~60cm，為基地保水滲透型。', 
           case_href: './page-cases/case22.html',
+        },
+        {
+          picture_avif_src:'/images/case23/zhenghua_park_01.avif',
+          picture_src: '/images/case23/zhenghua_park_01.png',
+          title: '台北市北投區 振華公園',
+          intro: '此案位於台北市北投區振華公園，係為公共工程案。總計施作180m³，上方覆土約45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case23.html',
+        },
+        {
+          picture_avif_src:'/images/case24/hukou_kindergarten_01.avif',
+          picture_src: '/images/case24/hukou_kindergarten_01.png',
+          title: '新竹縣湖口鄉 湖口文小非營利幼兒園',
+          intro: '此案位於新竹縣湖口鄉中正村的達生七街與達生八街交叉路口，係為公共工程案。總計施作15m³，上方覆土45~60cm，為基地保水滲透型。', 
+          case_href: './page-cases/case24.html',
         },
       ],
       savecases: [
@@ -462,6 +476,14 @@ const vm = Vue.createApp({
           title: '台北市文山區 遠雄晴川社區',
           case_href: './case22.html'
         },
+        {
+          title: '台北市北投區 振華公園',
+          case_href: './case23.html'
+        },
+        {
+          title: '新竹縣湖口鄉 湖口文小非營利幼兒園',
+          case_href: './case24.html'
+        },
        
       ],
       //知識分享左側導覽列用V-for渲染(page-articles)
@@ -550,6 +572,12 @@ const vm = Vue.createApp({
           intro: '城市熱島效應是指由於人類活動，導致城市及其周邊地區的氣溫上升的現象，同時也會帶來...',
           case_href: 'article14_urban_heat_island.html',
         },
+        {
+          picture_src: '/images/article15/#',
+          title: 'Rain SAVE雨水積磚如何響應SDGs永續發展目標？',
+          intro: '聯合國於2015年宣布了「2030永續發展目標」，旨在到2030年解決貧困、不平等、環境變遷等全球挑戰...',
+          case_href: 'article15_SDGs.html',
+        },
       ]
 
     }
@@ -559,9 +587,9 @@ const vm = Vue.createApp({
 // header和footer都會用到的公司基本資訊
  const $headerFooterCommon= {
   address: '台北市北投區清江路247巷8號1樓',
-  tel_number: '(02)2898-6207',
+  tel_number: '(02)2898-6776',
   fax_number: '(02)2898-6132',
-  email: 'rainsave@rainsave.com.tw',
+  email: 'RS@rainsave.com.tw',
   active: 'home'
  };
 
