@@ -107,7 +107,7 @@ ul.nav {
   background-color: #FFF;
 }
 
-.active, .nav-link .product{
+.nav-link .product{
   color: #FFF;
   background-color: #1E3E96;
 }
@@ -416,14 +416,14 @@ ul.nav {
   border: none;
 }
 .carousel-item.active {
-  background-color: #FFF;
+  background-color: #f8f9fa;
 }
 .case_mtb .col-sm-4 {
   margin-bottom: 10px;
 }
 
 .fake_img {
-  background-color: #E5E5E5;
+  background-color: #f8f9fa;
 }
 .article_img {
   width: 100%;

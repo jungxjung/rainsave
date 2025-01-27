@@ -13,6 +13,7 @@ $(document).ready(function(){
       touch: true
     })
 
+
     //footer responsive border
     var screenWidth = screen.width;
     var footerContactBox = document.getElementById("footerContactBox");
@@ -26,9 +27,9 @@ $(document).ready(function(){
 
     
 // Create a function to wrap items in carousel-items and rows
-function wrapItemsInCarousel() {
+function wrapItemsInCarousel(itemNum, carouselID) {
     // Select all items
-    const items = document.querySelectorAll('.c-item');
+    const items = document.querySelectorAll( '#'+ carouselID +' .c-item');
 
     // Create a container for rows
     const container = document.querySelector('.carousel-inner');
@@ -40,7 +41,7 @@ function wrapItemsInCarousel() {
     let carouselItem;
     items.forEach((item, index) => {
         // Start a new carousel item for every third item or the first item
-        if (index % 3 === 0 || index === 0) {
+        if (index % itemNum === 0 || index === 0) {
             carouselCount++;
             carouselItem = document.createElement('div');
             carouselItem.className = 'carousel-item';
@@ -51,7 +52,7 @@ function wrapItemsInCarousel() {
             container.appendChild(carouselItem);
         }
         // Create a row for every third item or the first item
-        if (index % 3 === 0 || index === 0) {
+        if (index % itemNum === 0 || index === 0) {
             const row = document.createElement('div');
             row.className = 'row';
             carouselItem.appendChild(row);
@@ -64,7 +65,8 @@ function wrapItemsInCarousel() {
     //document.getElementById('items').replaceWith(container);
 }
 
-wrapItemsInCarousel();
+wrapItemsInCarousel(3,"carouselknowledgeControls");
+// wrapItemsInCarousel(4,"caseVideo");
 // homepage carousel end
 
 //animation controll
@@ -578,7 +580,33 @@ const vm = Vue.createApp({
           intro: '聯合國於2015年宣布了「2030永續發展目標」，旨在到2030年解決貧困、不平等、環境變遷等全球挑戰...',
           case_href: 'article15_SDGs.html',
         },
-      ]
+      ],
+      // caseVideo: [
+      //   {
+      //     video_src:'../images/case01/case01_1.png',
+      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
+      //   },
+      //   {
+      //     video_src:'../images/case02/case02_2.png',
+      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
+      //   },
+      //   {
+      //     video_src:'../images/case01/case01_1.png',
+      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
+      //   },
+      //   {
+      //     video_src:'../images/case02/case02_2.png',
+      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
+      //   },
+      //   {
+      //     video_src:'../images/case01/case01_1.png',
+      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
+      //   },
+      //   {
+      //     video_src:'../images/case02/case02_2.png',
+      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
+      //   },
+      // ]
 
     }
   }
