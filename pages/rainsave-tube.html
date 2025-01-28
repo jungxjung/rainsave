@@ -92,60 +92,97 @@
       </div>
     </div>
 
-    <div class="row my-5 py-5">
-      <div class="col">
-        <p class="h3 fw-bold d-inline-block">&#9654;  案例分享 &nbsp; &nbsp; &nbsp; </p>
-        <div class="d-inline-block align-middle">
-          <p class="fs-4"><各種保水型積磚，滲透型積磚施工案例分享></p>
-        </div>
-      </div>
 
-      <div class="row">
-        <div id="app">
-          <div id="caseVideo" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-              <div
-                v-for="(group, index) in groupedVideos"
-                :key="index"
-                :class="['carousel-item', { active: index === 0 }]"
-              >
-                <div class="row">
-                  <div v-for="(item, idx) in group" :key="idx" class="col-6 col-sm-3 c-item">
-                    <img class="img-fluid rounded" :src="item.video_src" alt="" />
-                    <p class="fs-6 my-3 fw-bold">{{ item.video_title }}</p>
-                    <p class="fs-6 my-0">
-                      雨水積磚 rainsave tube <i class="bi bi-check-circle-fill text-success"></i>
-                    </p>
-                    <p class="fs-6 my-0">觀看次數：1020次</p>
-                  </div>
+    <div id="app">
+      <!-- Case Video Section -->
+      <div>
+        <div class="row my-5 py-5">
+          <div class="col">
+            <p class="h3 fw-bold d-inline-block">&#9654; 案例分享 &nbsp; &nbsp; &nbsp;</p>
+            <div class="d-inline-block align-middle">
+              <p class="fs-4">&lt;各種保水型積磚，滲透型積磚施工案例分享&gt;</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="caseVideo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div
+              v-for="(group, groupIndex) in groupedCaseVideos"
+              :key="'caseVideo-group-' + groupIndex"
+              :class="['carousel-item', { active: groupIndex === 0 }]"
+            >
+              <div class="row">
+                <div
+                  v-for="(video, videoIndex) in group"
+                  :key="'caseVideo-video-' + videoIndex"
+                  class="col-6 col-sm-3 c-item"
+                >
+                  <img class="img-fluid rounded" :src="video.video_src" alt="">
+                  <p class="fs-6 my-3 fw-bold">{{ video.video_title }}</p>
+                  <p class="fs-6 my-0">雨水積磚 rainsave tube <i class="bi bi-check-circle-fill text-success"></i></p>
+                  <p class="fs-6 my-0">觀看次數：1020次</p>
                 </div>
               </div>
             </div>
-      
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#caseVideo"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#caseVideo"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#caseVideo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#caseVideo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-
-
+  
+      <!-- Timelapse Video Section -->
+      <div>
+        <div class="row my-5 py-5">
+          <div class="col">
+            <p class="h3 fw-bold d-inline-block">&#9654; 影片分享 &nbsp; &nbsp; &nbsp;</p>
+            <div class="d-inline-block align-middle">
+              <p class="fs-4">&lt;建築施工工地影片分享&gt;</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="timelapseVideo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div
+              v-for="(group, groupIndex) in groupedTimelapseVideos"
+              :key="'timelapseVideo-group-' + groupIndex"
+              :class="['carousel-item', { active: groupIndex === 0 }]"
+            >
+              <div class="row">
+                <div
+                  v-for="(video, videoIndex) in group"
+                  :key="'timelapseVideo-video-' + videoIndex"
+                  class="col-6 col-sm-3 c-item"
+                >
+                  <img class="img-fluid rounded" :src="video.video_src" alt="">
+                  <p class="fs-6 my-3 fw-bold">{{ video.video_title }}</p>
+                  <p class="fs-6 my-0">雨水積磚 rainsave tube <i class="bi bi-check-circle-fill text-success"></i></p>
+                  <p class="fs-6 my-0">觀看次數：1020次</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#timelapseVideo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#timelapseVideo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
+  
+  
+  
 
 
 

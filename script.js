@@ -581,32 +581,6 @@ const vm = Vue.createApp({
           case_href: 'article15_SDGs.html',
         },
       ],
-      // caseVideo: [
-      //   {
-      //     video_src:'../images/case01/case01_1.png',
-      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
-      //   },
-      //   {
-      //     video_src:'../images/case02/case02_2.png',
-      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
-      //   },
-      //   {
-      //     video_src:'../images/case01/case01_1.png',
-      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
-      //   },
-      //   {
-      //     video_src:'../images/case02/case02_2.png',
-      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
-      //   },
-      //   {
-      //     video_src:'../images/case01/case01_1.png',
-      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
-      //   },
-      //   {
-      //     video_src:'../images/case02/case02_2.png',
-      //     video_title:'南投貓羅溪 100m<sup>3</sup> 儲水型',
-      //   },
-      // ]
 
     }
   }
