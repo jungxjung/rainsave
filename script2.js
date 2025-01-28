@@ -30,9 +30,9 @@ const app = Vue.createApp({
           videos: [
             { video_src: "../images/case01/case01_1.png", video_title: "Timelapse 1", video_url: "../video/fire.mp4" },
             { video_src: "../images/case01/case01_2.png", video_title: "Timelapse 2", video_url: "../video/road.mp4" },
-            { video_src: "../images/case01/case01_3.png", video_title: "Timelapse 3", video_url: "https://youtu.be/example3" },
-            { video_src: "../images/case01/case01_4.png", video_title: "Timelapse 4", video_url: "https://youtu.be/Ra-Om7UMSJc?si=3wRUytJdBkgSCAms" },
-            { video_src: "../images/case01/case01_4.png", video_title: "Timelapse 4", video_url: "https://youtu.be/Ra-Om7UMSJc?si=3wRUytJdBkgSCAms" }
+            { video_src: "../images/case01/case01_3.png", video_title: "Timelapse 3", video_url: "../video/road.mp4" },
+            { video_src: "../images/case01/case01_4.png", video_title: "Timelapse 4", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case01/case01_4.png", video_title: "Timelapse 4", video_url: "../video/fire.mp4" }
           ]
         },
         {
@@ -40,10 +40,13 @@ const app = Vue.createApp({
           title1: "縮時攝影",
           title2: "各種滲透型積磚，儲水型積磚縮時攝影分享",
           videos: [
-            { video_src: "timelapse1.jpg", video_title: "Timelapse 1", video_url: "https://youtu.be/example1" },
-            { video_src: "timelapse2.jpg", video_title: "Timelapse 2", video_url: "https://youtu.be/example2" },
-            { video_src: "timelapse3.jpg", video_title: "Timelapse 3", video_url: "https://youtu.be/example3" },
-            { video_src: "timelapse4.jpg", video_title: "Timelapse 4", video_url: "https://youtu.be/Ra-Om7UMSJc?si=3wRUytJdBkgSCAms" }
+            { video_src: "../images/case02/case02_1.png", video_title: "Timelapse 1", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_2.png", video_title: "Timelapse 2", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_1.png", video_title: "Timelapse 3", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_1.png", video_title: "Timelapse 4", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_2.png", video_title: "Timelapse 2", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_1.png", video_title: "Timelapse 3", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_1.png", video_title: "Timelapse 4", video_url: "../video/fire.mp4" },
           ]
         },
         {
@@ -51,10 +54,10 @@ const app = Vue.createApp({
           title1: "相關影音",
           title2: "雨水積磚抗壓強度，雨水積磚施工，雨水積磚如何再利用等影片分享",
           videos: [
-            { video_src: "timelapse1.jpg", video_title: "Timelapse 1", video_url: "https://youtu.be/example1" },
-            { video_src: "timelapse2.jpg", video_title: "Timelapse 2", video_url: "https://youtu.be/example2" },
-            { video_src: "timelapse3.jpg", video_title: "Timelapse 3", video_url: "https://youtu.be/example3" },
-            { video_src: "timelapse4.jpg", video_title: "Timelapse 4", video_url: "https://youtu.be/Ra-Om7UMSJc?si=3wRUytJdBkgSCAms" }
+            { video_src: "../images/case02/case02_3.png", video_title: "Timelapse 1", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_4.png", video_title: "Timelapse 2", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_5.png", video_title: "Timelapse 3", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_2.png", video_title: "Timelapse 4", video_url: "../video/road.mp4" }
           ]
         },
         {
@@ -62,10 +65,12 @@ const app = Vue.createApp({
           title1: "關於施工",
           title2: "雨水積磚的不織布鋪設固定方法，HDPE不透水布的熱熔焊接方式等影片介紹",
           videos: [
-            { video_src: "timelapse1.jpg", video_title: "Timelapse 1", video_url: "https://youtu.be/example1" },
-            { video_src: "timelapse2.jpg", video_title: "Timelapse 2", video_url: "https://youtu.be/example2" },
-            { video_src: "timelapse3.jpg", video_title: "Timelapse 3", video_url: "https://youtu.be/example3" },
-            { video_src: "timelapse4.jpg", video_title: "Timelapse 4", video_url: "https://youtu.be/Ra-Om7UMSJc?si=3wRUytJdBkgSCAms" }
+            { video_src: "../images/case02/case02_5.png", video_title: "Timelapse 1", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_2.png", video_title: "Timelapse 2", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_3.png", video_title: "Timelapse 3", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_4.png", video_title: "Timelapse 4", video_url: "../video/fire.mp4" },
+            { video_src: "../images/case02/case02_3.png", video_title: "Timelapse 3", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_4.png", video_title: "Timelapse 4", video_url: "../video/fire.mp4" },
           ]
         },
         {
@@ -73,10 +78,8 @@ const app = Vue.createApp({
           title1: "注意事項",
           title2: "雨水積磚使用應注意之重要事項",
           videos: [
-            { video_src: "warning1.jpg", video_title: "Warning 1", video_url: "https://youtu.be/example4" },
-            { video_src: "warning2.jpg", video_title: "Warning 2", video_url: "https://youtu.be/example5" },
-            { video_src: "warning3.jpg", video_title: "Warning 3", video_url: "https://youtu.be/example6" },
-            { video_src: "warning4.jpg", video_title: "Warning 4", video_url: "https://youtu.be/example7" }
+            { video_src: "../images/case02/case02_4.png", video_title: "Warning 1", video_url: "../video/road.mp4" },
+            { video_src: "../images/case02/case02_2.png", video_title: "Warning 2", video_url: "../video/road.mp4" },
           ]
         }
       ],
@@ -84,6 +87,7 @@ const app = Vue.createApp({
     };
   },
   methods: {
+
     openVideoModal(video) {
       this.modalVideo = video; // Set the selected video for the modal
     },
@@ -93,6 +97,12 @@ const app = Vue.createApp({
         groups.push(videos.slice(i, i + groupSize));
       }
       return groups;
+    },
+    clearModalVideo() {
+      this.modalVideo = {
+        video_title: "",
+        video_url: ""
+      };
     }
   }
 });
